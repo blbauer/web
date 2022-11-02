@@ -19,6 +19,7 @@
 <script>
 var base = document.createElement('base');
 x = window.location.protocol + '//' + window.location.hostname + (window.location.port ? ':' + window.location.port : '');
+y = document.location.href
 base.href = x
 document.getElementsByTagName('head')[0].appendChild(base);    
 </script>
