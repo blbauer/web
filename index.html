@@ -14,9 +14,14 @@
     <link rel="stylesheet" href="bootstrap/css/modern-business.css">
     <link rel="stylesheet" href="bootstrap/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="bootstrap/css/main.css">
-    <base href="/web/" />
+    <!--<base href="/web/" /> -->
 </head>
-
+<script>
+var base = document.createElement('base');
+x = window.location.protocol + '//' + window.location.hostname + (window.location.port ? ':' + window.location.port : '');
+base.href = x
+document.getElementsByTagName('head')[0].appendChild(base);    
+</script>
 <body>
 <div id="navigation" w3-include-html="bootstrap/inc/navigation.html"></div>
 
