@@ -17,13 +17,6 @@
     <!--<base href="/web/" /> -->
 </head>
 <script>
-/*
-var base = document.createElement('base');
-x = window.location.protocol + '//' + window.location.hostname + (window.location.port ? ':' + window.location.port : '');
-y = document.location.href
-base.href = x
-document.getElementsByTagName('head')[0].appendChild(base);    
-*/
 document.head.innerHTML = document.head.innerHTML + "<base href='" + document.location.href + "' />";
 </script>
 <body>

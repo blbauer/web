@@ -24,6 +24,10 @@
         }
     </style>
 </head>
+<script>
+    document.head.innerHTML = document.head.innerHTML + "<base href='" + document.location.href + "' />";
+</script>
+    
 <body>
     <div id="navigation" w3-include-html="../../../bootstrap/inc/navigation.html"></div>
 
