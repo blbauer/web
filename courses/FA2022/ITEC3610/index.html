@@ -2,9 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
     <script>
+        dq = '"'
         if (window.location.hostname.indexOf("github") != -1) {
-            dq = '"'
             newbase = "<base href=" + dq + "/web/" + dq + " />";
+            document.head.innerHTML = document.head.innerHTML + newbase;
+            x = document.head.innerHTML;
+        } else {
+            newbase = "<base href=" + dq + "/" + dq + " />";          
             document.head.innerHTML = document.head.innerHTML + newbase;
             x = document.head.innerHTML;
         }
@@ -17,11 +21,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/bootstrap/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="/bootstrap/css/modern-business.css">
-    <link rel="stylesheet" href="/bootstrap/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/bootstrap/css/main.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="bootstrap/css/modern-business.css">
+    <link rel="stylesheet" href="bootstrap/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap/css/main.css">
     <style>
        .error {
         color: red;
@@ -35,7 +39,7 @@
    
     
 <body>
-    <div id="navigation" w3-include-html="/bootstrap/inc/navigation.html"></div>
+    <div id="navigation" w3-include-html="bootstrap/inc/navigation.html"></div>
 
     <!-- Page Content -->
     <div class="container">
@@ -57,7 +61,7 @@
         </div>
         <div class="panel-body">
             <ul>
-                <li><a href="/courses/FA2022/ITEC3610/index.html">Test Link</a></li>
+                <li><a href="courses/FA2022/ITEC3610/index.html">Test Link</a></li>
                 <li><strong>In Person Stem Career Fair (12pm - 3pm on Sep 29 )</strong> - Register at <a href="https://ualr.edu/cstem/stem-career-services/">https://ualr.edu/cstem/stem-career-services/</a></li>
 <!--                <li><strong>Resume Writing Seminars (Sept. 9 and Sept. 17)</strong> – Multiple seminars are held annually where tips are provided to students to make their resume stand out in order to secure employment.</li>
                 <li><strong>Professionalize Your Social Media Seminar (Sept. 16)</strong> – Learn how to write professional emails and how to use social media to your advantage to assist in securing employment.</li>
@@ -3028,9 +3032,9 @@ $( "#SelectExampleValidateForm" ).validate({
             <div class="col-md-3" id="sidebar" w3-include-html="../../../bootstrap/inc/sidebar.html"></div> <!-- /.sidebar col-md-3 -->
     </div> <!-- /.row -->
     <footer class="well" id="footer" w3-include-html="../../../bootstrap/inc/footer.html"></footer>
-<script src="../../../bootstrap/js/vendor/jquery-1.11.2.min.js"></script>
-<script src="../../../bootstrap/js/vendor/bootstrap.min.js"></script>
-<script src="../../../bootstrap/js/main.js"></script>
+<script src="bootstrap/js/vendor/jquery-1.11.2.min.js"></script>
+<script src="bootstrap/js/vendor/bootstrap.min.js"></script>
+<script src="bootstrap/js/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
 </div> <!-- /container -->        
