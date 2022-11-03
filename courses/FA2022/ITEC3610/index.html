@@ -27,9 +27,11 @@
 <script>
     if (window.location.hostname.indexOf("github") != -1) {
         dq = '"'
-        document.head.innerHTML = document.head.innerHTML + "<base href=" + dq + "/web/" + dq + " />";
+        newbase = "<base href=" + dq + "/web/" + dq + " />";
+        document.head.innerHTML = document.head.innerHTML + newbase;
+        x = document.head.innerHTML;
     }
-    /</script>
+    </script>
     
     
 <body>
