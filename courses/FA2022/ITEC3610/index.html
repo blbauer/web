@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
+    <script>
+        if (window.location.hostname.indexOf("github") != -1) {
+            dq = '"'
+            newbase = "<base href=" + dq + "/web/" + dq + " />";
+            document.head.innerHTML = document.head.innerHTML + newbase;
+            x = document.head.innerHTML;
+        }
+    </script>
     <title>Bruce Bauer - Information Science Lectures and Resources</title>
     <meta charset="utf-8">
     <meta name="description" content="Information Technology Lectures">
@@ -24,18 +32,10 @@
         }
     </style>
 </head>
-<script>
-    if (window.location.hostname.indexOf("github") != -1) {
-        dq = '"'
-        newbase = "<base href=" + dq + "/web/" + dq + " />";
-        document.head.innerHTML = document.head.innerHTML + newbase;
-        x = document.head.innerHTML;
-    }
-    </script>
-    
+   
     
 <body>
-    <div id="navigation" w3-include-html="../../../bootstrap/inc/navigation.html"></div>
+    <div id="navigation" w3-include-html="/bootstrap/inc/navigation.html"></div>
 
     <!-- Page Content -->
     <div class="container">
