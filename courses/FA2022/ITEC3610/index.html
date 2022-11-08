@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
     <script>
-        
+        /*
         dq = '"'
         if (window.location.hostname.indexOf("github") != -1) {
             newbase = "<base href=" + dq + "/web/" + dq + " />";
@@ -13,7 +13,7 @@
             document.head.innerHTML = document.head.innerHTML + newbase;
             x = document.head.innerHTML;
         }
-        
+       */ 
     </script>
     <title>Bruce Bauer - Information Science Lectures and Resources</title>
     <meta charset="utf-8">
@@ -22,12 +22,12 @@
     <meta name="author" content="Bruce Bauer">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="bootstrap/css/modern-business.css">
-    <link rel="stylesheet" href="bootstrap/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="bootstrap/css/main.css">
+    <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../../../bootstrap/css/modern-business.css">
+    <link rel="stylesheet" href="../../../bootstrap/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../../bootstrap/css/main.css">
     <style>
        .error {
         color: red;
@@ -41,7 +41,7 @@
    
     
 <body>
-    <div id="navigation" w3-include-html="bootstrap/inc/navigation.html"></div>
+    <div id="navigation" w3-include-html="../../../bootstrap/inc/navigation.html"></div>
 
     <!-- Page Content -->
     <div class="container">
@@ -3056,6 +3056,7 @@ $(document).ready(function(){
 </script>
 <script>
 $(document).ready(function(){
+    /*
     $.get("../../../bootstrap/inc/navigation.html", function(data) {
         $("#navigation").html(data);
     });
@@ -3065,7 +3066,7 @@ $(document).ready(function(){
     $.get("../../../bootstrap/inc/footer.html", function(data) {
         $("#footer").html(data);
     });
-
+    */
     $("#btnERDFigure1").click(function(){
         $("#ERDFigure1").slideToggle("slow");
     });
