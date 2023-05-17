@@ -18,11 +18,15 @@ header.carousel .fill {
 .page-header {
     border-bottom: 0px;
 }
-/*
-.gist .gist-meta { display:none; }
-*/
-.gist-meta { 
-        display: none;}
+
+.error {
+    color: red;
+    padding-left: 5px;
+    }
+    .nodot {
+        list-style-type: none;
+    }
+
 /*
 #FA2015ITEC3610Day1,
 #FA2015ITEC3610Day2,
