@@ -1,25 +1,39 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-    <title>Bruce Bauer - Information Science Lectures and Resources</title>
     <meta charset="utf-8">
-    <meta name="description" content="Information Technology Lectures">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Bruce Bauer - E-Commerce Lectures and Resources</title>
+    <meta name="description" content="E-Commerce and Information Technology Lectures">
     <meta name="keywords" content="E-Commerce, HTML, CSS, PHP ,JavaScript">
     <meta name="author" content="Bruce Bauer">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../../../bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../../bootstrap/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="../../../bootstrap/css/modern-business.css">
-    <link rel="stylesheet" href="../../../bootstrap/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../../../bootstrap/css/main.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/bootstrap/css/modern-business.css">
+    <link rel="stylesheet" href="/bootstrap/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/bootstrap/css/main.css">
+    <script src="/bootstrap/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <style>
+       .error {
+        color: red;
+        padding-left: 5px;
+        }
+        .nodot {
+            list-style-type: none;
+        }
+    </style>
 </head>
-   
-    
 <body>
-    <div id="navigation" w3-include-html="../../../bootstrap/inc/navigation3.html"></div>
 
+<div id="navigation">
+</div>
+
+    
     <!-- Page Content -->
     <div class="container">
         <!-- Marketing Icons Section -->
@@ -39,8 +53,7 @@
             <h3>Events</h3>
         </div>
         <div class="panel-body">
-        <ul>
-                <li><a href="courses/FA2022/ITEC3610/index.html">Test Link</a></li>
+            <ul>
                 <li><strong>In Person Stem Career Fair (12pm - 3pm on Sep 29 )</strong> - Register at <a href="https://ualr.edu/cstem/stem-career-services/">https://ualr.edu/cstem/stem-career-services/</a></li>
 <!--                <li><strong>Resume Writing Seminars (Sept. 9 and Sept. 17)</strong> – Multiple seminars are held annually where tips are provided to students to make their resume stand out in order to secure employment.</li>
                 <li><strong>Professionalize Your Social Media Seminar (Sept. 16)</strong> – Learn how to write professional emails and how to use social media to your advantage to assist in securing employment.</li>
@@ -2374,10 +2387,13 @@
                 </div>
                 <div class="panel-body">
                     <ul>
-                        <li><a href="https://www.w3schools.com/html/html_forms.asp">HTML Forms, Get vs. Post</a></li>
+                        <li><a href="https://www.w3schools.com/html/html_forms.asp">HTML Forms</a></li>
+                        <li><a href="https://www.w3schools.com/tags/tag_label.asp">HTML Labels</a></li>
+                        <li><a href="https://www.w3schools.com/html/html_forms_attributes.asp">HTML Form Attributes</a></li>
                         <li><a href="https://www.w3schools.com/html/html_form_elements.asp">HTML Form Elements</a></li>
                         <li><a href="https://www.w3schools.com/html/html_form_input_types.asp">HTML Input Types</a></li>
-                        <li><a href="https://www.w3schools.com/tags/tag_label.asp">HTML Labels</a></li>
+                        <li><a href="https://www.w3schools.com/html/html_form_attributes.asp">HTML Input Attributes</a></li>
+                        <li><a href="https://www.w3schools.com/html/html_form_attributes_form.asp">HTML Input Form Attributes</a></li>
                     </ul>
             <div class="panel panel-default">
                 <div class="panel-heading">
@@ -2522,7 +2538,7 @@
 
                     
                 <div class="well">
-                    <p><strong>Assignment - Due November 15 at the beginning of class - </strong> In your development environment, create a new subproject called <strong>Validation</strong>.  As closely as possible, create the web form in index.html using the image below.  When complete, you should be able to see the values when you submit the form.  You will need this assignment for your next class period.</p>
+                    <p><strong>Assignment - Due November 15 at the beginning of class - </strong> In your development environment, create a new subproject called <strong>Validation</strong>.  As closely as possible, create the web form in index.html using the image below.  When complete, you should be able to see the values when you submit the form.  You will need this assignment for your next class period. <strong>Be sure to validate your solution at <a href="https://validator.w3.org/">https://validator.w3.org/</a> and fix all errors before the next class period.</strong></p>
                     <button id="btnNewPatientRegistration">Click to view figure</button><br>
                     <div id="NewPatientRegistration" class="text-block text-center" style="display: none">
                         <br>
@@ -2797,9 +2813,9 @@ $( "#RadioExampleValidateForm" ).validate({
             <input type="submit" value="RadioExample" name="RadioButton">
             <label>Cars: </label>
             <label for="myChevrolet"><input type="radio" id="myChevrolet" name="mycar" value="Chevrolet" 
-                data-rule-required="true" data-msg-required="Car is Required">Chevrolet</label>
-            <label for="myFord"><input type="radio" id="myFord" name="mycar" value="Ford">Ford Motor</label>
-            <label for="myDodge"><input type="radio" id="myDodge" name="mycar" value="Dodge">Dodge Ram</label>
+                data-rule-required="true" data-msg-required="Car is Required" />Chevrolet</label>
+            <label for="myFord"><input type="radio" id="myFord" name="mycar" value="Ford" />Ford Motor</label>
+            <label for="myDodge"><input type="radio" id="myDodge" name="mycar" value="Dodge" />Dodge Ram</label>
             <label for="mycar" class="error"></label><br>
         </form>
         </div>
@@ -2963,11 +2979,10 @@ $( "#SelectExampleValidateForm" ).validate({
             <!-- Windows Section Start -->
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h4><strong>Speeches</strong></h4>
+                    <h4><strong>Form Validation</strong></h4>
                 </div>
                 <div class="panel-body">
                     <ul>
-                        <li>ITEC 4610 Portfolio Presentation</li>
                         <li>Work on Webform</li>
                     </ul>
                 </div>
@@ -2993,6 +3008,7 @@ $( "#SelectExampleValidateForm" ).validate({
                 <div class="panel-body">
                     <ul>
                         <li>ITEC 3610 Speeches</li>
+                        <li>ITEC 4610 Portfolio Presentations</li>
                     <!--
                     <li><a href="https://www.surveymonkey.com/r/3CJSPFZ">ITEC 3610 Course Evaluation</a> (to by filled out by ITEC 3610 students)</li>
                     -->
@@ -3008,17 +3024,43 @@ $( "#SelectExampleValidateForm" ).validate({
         
             </div> <!-- /.main content col-md-9 -->
             
-            <div class="col-md-3" id="sidebar" w3-include-html="../../../bootstrap/inc/sidebar.html"></div> <!-- /.sidebar col-md-3 -->
+            <div class="col-md-3" id="sidebar">
+            </div> <!-- /.sidebar col-md-3 -->
+
     </div> <!-- /.row -->
-<footer class="well" id="footer" w3-include-html="../../../bootstrap/inc/footer.html"></footer>
+<footer class="well" id="footer">
+</footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="../../../bootstrap/js/vendor/bootstrap.min.js"></script>
 <script src="../../../bootstrap/js/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
-</div> <!-- /container -->        
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script></div> <!-- /container -->        
+<script>/*
+$(document).ready(function(){
+  $.get("../../../bootstrap/inc/navigation.html", function(data) {
+    $("#navigation").html(data);
+  });
+  $.get("../../../bootstrap/inc/sidebar.html", function(data) {
+    $("#sidebar").html(data);
+  });
+  $.get("../../../bootstrap/inc/footer.html", function(data) {
+    $("#footer").html(data);
+  });
+}); 
+*/
+</script>
 <script>
 $(document).ready(function(){
+    $.get("../../../bootstrap/inc/navigation3.html", function(data) {
+        $("#navigation").html(data);
+    });
+    $.get("../../../bootstrap/inc/sidebar.html", function(data) {
+        $("#sidebar").html(data);
+    });
+    $.get("../../../bootstrap/inc/footer.html", function(data) {
+        $("#footer").html(data);
+    });
+
     $("#btnERDFigure1").click(function(){
         $("#ERDFigure1").slideToggle("slow");
     });
@@ -3113,6 +3155,46 @@ $(document).ready(function(){
 }); 
     
     </script>
+<!-- Day 17 Lecture Start -->
+<!--
+<div id="FA2022ITEC3610Day17">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>March 14, 2018</h3>
+        </div>
+        <div class="panel-body">
+                        
+  -->          <!-- Windows Section Start -->
+    <!--
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Cloud 9</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <p>Getting Started with Cloud 9:</p>
+                    <ul>
+                        <li>Login to you email and locate the invitation to join Cloud 9.  Click on the link.</li>
+                        <li>You will be asked to enter a username, email, and password</li>
+                        <li>Click on add a new workspace.  Give the workspace a name of itecsapphire. Use a type of "PHP, Apache, and MySQL"</li>
+                        <li>Note the files in your directory structure. Since Apache is running, you can access the webserver at https://&lt;yourworkspace&gt;-&lt;yourusername&gt;.c9users.io, such as https://itecsapphire-blbauer.c9users.io</li>
+                        <li>On the "BASH" tab, enter the following: see <a href="https://community.c9.io/t/setting-up-phpmyadmin/1723">https://community.c9.io/t/setting-up-phpmyadmin/1723</a> for more documentation.
+                            <ul>
+                                <li><strong>mysql-ctl install</strong> - This will install the MySQL database.  Be sure you run this only one time, else it will delete all of the MySQL databases. You will get a prompt, but just be aware of what it is doing.</li>
+                                <li><strong>phpmyadmin-ctl install</strong> - This will install phpmyadmin, which is a web tool to administer the MySQL database.</li>
+                                <li><strong>mysql-ctl start</strong> - Make sure that MySQL is started</li>
+                                <li>You can access the control panel at https://&lt;yourworkspace&gt;-&lt;yourusername&gt;.c9users.io/phpmyadmin, such as https://itecsapphire-blbauer.c9users.io/phpmyadmin.  When prompted for credentials, use your username and a blank password.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Do not delete any of the existing databases in MySQL.</strong> They are needed to run Cloud 9 and MySQL.</li>
+                        <li>To close your workspace, click on your avatar and select logoff.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>  --><!-- End Lecture Body -->
+<!--
+</div>  --><!-- End Lecture Panel -->
+<!--    <hr>
+</div>  --><!-- End Day -->
     
     </body>
 </html>
