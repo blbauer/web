@@ -1,28 +1,23 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Bruce Bauer - E-Commerce Lectures and Resources</title>
-    <meta name="description" content="E-Commerce and Information Technology Lectures">
-    <meta name="keywords" content="E-Commerce, HTML, CSS, PHP ,JavaScript">
-    <meta name="author" content="Bruce Bauer">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="-1">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/bootstrap/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="/bootstrap/css/modern-business.css">
-    <link rel="stylesheet" href="/bootstrap/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/bootstrap/css/main.css">
-    <script src="/bootstrap/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-</head>
-<body>
-
-<div id="navigation">
-</div>
+    <head>
+        <title>Bruce Bauer - Information Science Lectures and Resources</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Information Technology Lectures">
+        <meta name="keywords" content="E-Commerce, HTML, CSS, PHP ,JavaScript">
+        <meta name="author" content="Bruce Bauer">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="bootstrap/css/modern-business.css">
+        <link rel="stylesheet" href="bootstrap/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="bootstrap/css/main.css">
+    </head>
+    
+    <body>
+    <div id="navigation" w3-include-html="bootstrap/inc/navigation.html"></div>
 
     
     <!-- Page Content -->
@@ -39,10 +34,10 @@
             <div class="col-md-9">
                 
                <div class="panel panel-default">
-                    <div class="panel-heading">
+                   <div class="panel-heading">
                         <h4><i class="fa fa-fw fa-shopping-cart"></i> About Me</h4>
-                    </div>
-                    <div class="panel-body">
+                     </div>
+                     <div class="panel-body">
 <p>You are welcome to make an appointment with me to be advised, help with class, or just to talk about all things IT.  I can meet with you in person, on the phone, via Google Hangout, or use the Instructor Session in Blackboard.</p>
 
 <br>
@@ -54,34 +49,17 @@ Little Rock, Arkansas  72204<br><br>
 
 <p>The best way to find me is to email me at <a href="mailto:blbauer@ualr.edu">blbauer@ualr.edu</a> and leave your contact informtion.  I will get back with you as soon as possible.</p>
 
-                    </div>
-                </div>
-                
-            </div> <!-- /.main content col-md-9 -->
+                   </div>
+                 </div>
+              </div> <!-- /.main content col-md-9 -->
             
-            <div class="col-md-3" id="sidebar">
-            </div> <!-- /.sidebar col-md-3 -->
-
-    </div> <!-- /.row -->
-<footer class="well" id="footer">
-</footer>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script>//window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-<script src="/bootstrap/js/vendor/bootstrap.min.js"></script>
-<script src="/bootstrap/js/main.js"></script>    
-</div> <!-- /container -->        
-<script>
-$(document).ready(function(){
-  $.get("../../../bootstrap/inc/navigation.html", function(data) {
-    $("#navigation").html(data);
-  });
-  $.get("../../../bootstrap/inc/sidebar.html", function(data) {
-    $("#sidebar").html(data);
-  });
-  $.get("../../../bootstrap/inc/footer.html", function(data) {
-    $("#footer").html(data);
-  });
-}); 
-</script>
-</body>
-</html>
+            <div class="col-md-3" id="sidebar" w3-include-html="bootstrap/inc/sidebar.html"></div> <!-- /.sidebar col-md-3 -->
+  
+          </div> <!-- /.row -->
+          <footer class="well" id="footer" w3-include-html="bootstrap/inc/footer.html"></footer>
+      </div> <!-- /container --> 
+      <script src="bootstrap/js/vendor/jquery-1.11.2.min.js"></script>
+      <script src="bootstrap/js/vendor/bootstrap.min.js"></script>
+      <script src="bootstrap/js/main.js"></script>
+  </body>
+  </html>
