@@ -63,31 +63,15 @@ Little Rock, Arkansas  72204<br><br>
                 
                 
                 
-            </div> <!-- /.main content col-md-9 -->
+              </div> <!-- /.main content col-md-9 -->
             
-            <div class="col-md-3" id="sidebar">
-            </div> <!-- /.sidebar col-md-3 -->
-
-    </div> <!-- /.row -->
-<footer class="well" id="footer">
-</footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script>//window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-<script src="/bootstrap/js/vendor/bootstrap.min.js"></script>
-<script src="/bootstrap/js/main.js"></script>    
-</div> <!-- /container -->        
-<script>
-$(document).ready(function(){
-  $.get("../../../bootstrap/inc/navigation.html", function(data) {
-    $("#navigation").html(data);
-  });
-  $.get("../../../bootstrap/inc/sidebar.html", function(data) {
-    $("#sidebar").html(data);
-  });
-  $.get("../../../bootstrap/inc/footer.html", function(data) {
-    $("#footer").html(data);
-  });
-}); 
-</script>
-</body>
-</html>
+              <div class="col-md-3" id="sidebar" w3-include-html="bootstrap/inc/sidebar.html"></div> <!-- /.sidebar col-md-3 -->
+  
+          </div> <!-- /.row -->
+          <footer class="well" id="footer" w3-include-html="bootstrap/inc/footer.html"></footer>
+      </div> <!-- /container --> 
+      <script src="bootstrap/js/vendor/jquery-1.11.2.min.js"></script>
+      <script src="bootstrap/js/vendor/bootstrap.min.js"></script>
+      <script src="bootstrap/js/main.js"></script>
+  </body>
+  </html>
