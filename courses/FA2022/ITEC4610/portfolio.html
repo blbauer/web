@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <title>Bruce Bauer - Information Science Lectures and Resources</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Information Technology Lectures">
+    <meta name="keywords" content="E-Commerce, HTML, CSS, PHP ,JavaScript">
+    <meta name="author" content="Bruce Bauer">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../../../bootstrap/css/modern-business.css">
+    <link rel="stylesheet" href="../../../bootstrap/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../../bootstrap/css/main.css">
+</head>
+
+<body>
+    <nav id="navigation"></nav>
+    <!-- Page Content -->
+    <div class="container">
+        <!-- Marketing Icons Section -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">
+                    ITEC 4610 - Project Development and Portfolio Defense
+                </h1>
+            </div> <!-- /.screen col-lg-12 -->
+
+        <!-- Section Start -->
+            <div class="col-md-9">
+
+        <div class="panel-body">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Portfolio - Desired Outcomes</strong></h4>
+                </div>            
+                <div class="panel-body">
+                    <p>A key component of ITEC4610 is the capstone portfolio. The portfolio has two general goals:</p>
+                    <ul>
+                        <li>Document application of core competencies learned in the Information Science Degree.</li>
+                        <li>Demonstrate to potential employers the value you could offer as an employee with skills obtained through the Information Science Degree.</li>
+                    </ul>
+                    <p>You will have two sites:<p>
+                    <ul>
+                        <li>A well-formatted LinkedIn profile with a link to your portfolio.</li>
+                        <li>A portfolio of your work using one of the following techniques:
+                            <ol>
+                                <li>A responsive, hand-coded HTML/CSS web site (see <a href="https://getbootstrap.com">https://getbootstrap.com</a>) hosted on <a href="https://github.com">github</a> (free) or your own website</li>
+                                <li>A simpler, non-responsive, hand-coded HTML/CSS web site (see <a href="https://www.w3schools.com/howto/howto_js_tabs.asp">https://www.w3schools.com/howto/howto_js_tabs.asp</a>) hosted on <a href="https://github.com">github</a> (free) or your own website.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <p>You can see an example of a portfolio at <a href="https://blbauer.github.io/portfolio/">https://blbauer.github.io/portfolio/</a>.</p>
+                    <p>You can access the portfolio project by clicking on the <a href="https://trello.com/invite/b/IYV9sp1x/ebd8d8964e21e6965fe265169ac18480/portfolio-development">Trello Invitation</a></p>
+                </div>
+            </div>
+        </div>
+            
+        <div class="panel-body">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Portfolio - Grading Rubric (Total 100 Points)</strong></h4>
+                </div>            
+                <div class="panel-body">
+                    <p>Your portfolio will be a demonstration of your skills, your personality, and your career goals, so you can expect your portfolio to be different from those created by your classmates. At a minimum, however, all portfolios should be delivered in a web-based digital format and demonstrate the following:</p>
+
+                    <ul>
+                        <li>An Elevator Pitch that serves as a home page <strong>(5 points)</strong></li>
+                        <li>A current Resume in HTML format <strong>(5 points)</strong></li>
+                        <li>A current Resume in .DOC format <strong>(5 points)</strong></li>
+                        <li>A generic Cover Letter <strong>(5 points)</strong></li>
+                        <li>Writing examples <strong>(2 examples are required, each worth 5 points)</strong></li>
+                        <li>Web examples <strong>(2 examples are required, each worth 5 points)</strong>
+                        <li>Database examples <strong>(2 examples are required, each worth 5 points)</strong></li>
+                        <li>Programming examples <strong>(2 examples are required, each worth 5 points)</strong></li>
+                        <li>Soft Skills examples <strong>(2 examples are required, each worth 5 points)</strong></li>
+                        <li>A reflection on your Capstone project <strong>(20 points)</strong></li>
+                        <li>A well-formatted LinkedIn profile with a link to your portfolio <strong>(10 points)</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+            </div> <!-- /.main content col-md-9 -->
+            
+            <div class="col-md-3" id="sidebar">
+            </div> <!-- /.sidebar col-md-3 -->
+
+    </div> <!-- /.row -->
+    <footer class="well" id="footer"></footer>
+</div> <!-- /container -->        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="../../../bootstrap/js/vendor/bootstrap.min.js"></script>
+<script src="../../../bootstrap/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
+<script>
+$(document).ready(function(){
+  $.get("../../../bootstrap/inc/navigation.html", function(data) {
+    $("#navigation").html(data);
+  });
+  $.get("../../../bootstrap/inc/sidebar.html", function(data) {
+    $("#sidebar").html(data);
+  });
+  $.get("../../../bootstrap/inc/footer.html", function(data) {
+    $("#footer").html(data);
+  });
+});
+</script>
+<script>
+$(document).ready(function(){    
+    $("#btnWebDirectoryStructure").click(function(){
+        $("#WebDirectoryStructure").slideToggle("slow");
+    });
+    $("#btnPortfolioIndex").click(function(){
+        $("#PortfolioIndex").slideToggle("slow");
+    });
+    $("#btnWorkExamples").click(function(){
+        $("#WorkExamples").slideToggle("slow");
+    });
+    $("#btnStudentPortfolioCSS").click(function(){
+        $("#StudentPortfolioCSS").slideToggle("slow");
+    });
+    $("#btnPortfolioIndexJS").click(function(){
+        $("#PortfolioIndexJS").slideToggle("slow");
+    });
+}); 
+</script>
+</body>
+</html>
