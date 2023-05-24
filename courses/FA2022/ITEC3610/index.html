@@ -18,7 +18,7 @@
    
     
 <body>
-    <div id="navigation" w3-include-html="../../../bootstrap/inc/navigation3.html"></div>
+    <nav id="navigation"></nav>
 
     <!-- Page Content -->
     <div class="container">
@@ -3008,15 +3008,28 @@ $( "#SelectExampleValidateForm" ).validate({
         
             </div> <!-- /.main content col-md-9 -->
             
-            <div class="col-md-3" id="sidebar" w3-include-html="../../../bootstrap/inc/sidebar.html"></div> <!-- /.sidebar col-md-3 -->
+            <div class="col-md-3" id="sidebar"></div> <!-- /.sidebar col-md-3 -->
     </div> <!-- /.row -->
-<footer class="well" id="footer" w3-include-html="../../../bootstrap/inc/footer.html"></footer>
+<footer class="well" id="footer"></footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="../../../bootstrap/js/vendor/bootstrap.min.js"></script>
 <script src="../../../bootstrap/js/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
 </div> <!-- /container -->        
+<script>
+$(document).ready(function(){
+    $.get("../../../bootstrap/inc/navigation3.html", function(data) {
+        $("#navigation").html(data);
+    });
+    $.get("../../../bootstrap/inc/sidebar.html", function(data) {
+        $("#sidebar").html(data);
+    });
+    $.get("../../../bootstrap/inc/footer.html", function(data) {
+        $("#footer").html(data);
+    });
+    }); 
+</script>
 <script>
 $(document).ready(function(){
     $("#btnERDFigure1").click(function(){
@@ -3085,7 +3098,6 @@ $(document).ready(function(){
     $("#btnPracticeAssessment").click(function(){
         $("#PracticeAssessment").slideToggle("slow");
     });
-
     
     $( "#SubmitExampleValidateForm" ).validate({
 
@@ -3106,13 +3118,10 @@ $(document).ready(function(){
 
     });
 
-    
     $("#btnNewPatientRegistration").click(function(){
         $("#NewPatientRegistration").slideToggle("slow");
     });
 }); 
-    
-    </script>
-    
-    </body>
+</script>
+</body>
 </html>

@@ -18,11 +18,7 @@
    
     
 <body>
-
-<div id="navigation">
-</div>
-
-    
+<div id="navigation"></div>    
     <!-- Page Content -->
     <div class="container">
         <!-- Marketing Icons Section -->
@@ -3024,9 +3020,9 @@ $( "#SelectExampleValidateForm" ).validate({
 <script src="../../../bootstrap/js/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script></div> <!-- /container -->        
-<script>/*
+<script>
 $(document).ready(function(){
-  $.get("../../../bootstrap/inc/navigation.html", function(data) {
+  $.get("../../../bootstrap/inc/navigation3.html", function(data) {
     $("#navigation").html(data);
   });
   $.get("../../../bootstrap/inc/sidebar.html", function(data) {
@@ -3036,20 +3032,9 @@ $(document).ready(function(){
     $("#footer").html(data);
   });
 }); 
-*/
 </script>
 <script>
 $(document).ready(function(){
-    $.get("../../../bootstrap/inc/navigation3.html", function(data) {
-        $("#navigation").html(data);
-    });
-    $.get("../../../bootstrap/inc/sidebar.html", function(data) {
-        $("#sidebar").html(data);
-    });
-    $.get("../../../bootstrap/inc/footer.html", function(data) {
-        $("#footer").html(data);
-    });
-
     $("#btnERDFigure1").click(function(){
         $("#ERDFigure1").slideToggle("slow");
     });
@@ -3117,7 +3102,6 @@ $(document).ready(function(){
         $("#PracticeAssessment").slideToggle("slow");
     });
 
-    
     $( "#SubmitExampleValidateForm" ).validate({
 
     });
@@ -3136,14 +3120,13 @@ $(document).ready(function(){
     $( "#SelectExampleDOMForm" ).validate({
 
     });
-
     
     $("#btnNewPatientRegistration").click(function(){
         $("#NewPatientRegistration").slideToggle("slow");
     });
 }); 
     
-    </script>
+</script>
 <!-- Day 17 Lecture Start -->
 <!--
 <div id="FA2022ITEC3610Day17">
@@ -3185,5 +3168,5 @@ $(document).ready(function(){
 <!--    <hr>
 </div>  --><!-- End Day -->
     
-    </body>
+</body>
 </html>

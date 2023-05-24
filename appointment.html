@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-    <head>
-        <title>Bruce Bauer - Information Science Lectures and Resources</title>
-        <meta charset="utf-8">
-        <meta name="description" content="Information Technology Lectures">
-        <meta name="keywords" content="E-Commerce, HTML, CSS, PHP ,JavaScript">
-        <meta name="author" content="Bruce Bauer">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="bootstrap/css/modern-business.css">
-        <link rel="stylesheet" href="bootstrap/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="bootstrap/css/main.css">
-    </head>
+<head>
+    <title>Bruce Bauer - Information Science Lectures and Resources</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Information Technology Lectures">
+    <meta name="keywords" content="E-Commerce, HTML, CSS, PHP ,JavaScript">
+    <meta name="author" content="Bruce Bauer">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="bootstrap/css/modern-business.css">
+    <link rel="stylesheet" href="bootstrap/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap/css/main.css">
+</head>
     
-    <body>
-    <div id="navigation" w3-include-html="bootstrap/inc/navigation.html"></div>
-    
+<body>
+    <nav id="navigation"></nav>
     <!-- Page Content -->
     <div class="container">
         <!-- Marketing Icons Section -->
@@ -64,7 +63,7 @@
                 
             </div> <!-- /.main content col-md-9 -->
             
-            <div class="col-md-3" id="sidebar" w3-include-html="bootstrap/inc/sidebar.html"></div> <!-- /.sidebar col-md-3 -->
+            <div class="col-md-3" id="sidebar"></div> <!-- /.sidebar col-md-3 -->
 
         </div> <!-- /.row -->
         <footer class="well" id="footer" w3-include-html="bootstrap/inc/footer.html"></footer>
@@ -72,5 +71,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="bootstrap/js/vendor/bootstrap.min.js"></script>
     <script src="bootstrap/js/main.js"></script>
-</body>
-</html>
+    <script>
+    $(document).ready(function(){
+        $.get("bootstrap/inc/navigation.html", function(data) {
+            $("#navigation").html(data);
+        });
+        $.get("bootstrap/inc/sidebar.html", function(data) {
+            $("#sidebar").html(data);
+        });
+        $.get("bootstrap/inc/footer.html", function(data) {
+            $("#footer").html(data);
+        });
+    }); 
+    </script>
+    </body>
+    </html>

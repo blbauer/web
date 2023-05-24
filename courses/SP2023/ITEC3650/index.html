@@ -18,9 +18,7 @@
    
     
 <body>
-    <div id="navigation" w3-include-html="../../../bootstrap/inc/navigation3.html"></div>
-
-    
+    <div id="navigation"></div>
     <!-- Page Content -->
     <div class="container">
         <!-- Marketing Icons Section -->
@@ -2536,18 +2534,18 @@ var siteDescription = msg.value.timeSeries[1].variable.variableDescription
                 
             </div> <!-- /.main content col-md-9 -->
             
-            <div class="col-md-3" id="sidebar" w3-include-html="../../../bootstrap/inc/sidebar.html"></div> <!-- /.sidebar col-md-3 -->
+            <div class="col-md-3" id="sidebar"></div> <!-- /.sidebar col-md-3 -->
     </div> <!-- /.row -->
-    <footer class="well" id="footer" w3-include-html="../../../bootstrap/inc/footer.html"></footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="../../../bootstrap/js/vendor/bootstrap.min.js"></script>
-    <script src="../../../bootstrap/js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
-    </div> <!-- /container -->        
+    <footer class="well" id="footer"></footer>
+</div> <!-- /container -->    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="../../../bootstrap/js/vendor/bootstrap.min.js"></script>
+<script src="../../../bootstrap/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
 <script>
 $(document).ready(function(){
-    $.get("../../../bootstrap/inc/navigation.html", function(data) {
+    $.get("../../../bootstrap/inc/navigation3.html", function(data) {
         $("#navigation").html(data);
     });
     $.get("../../../bootstrap/inc/sidebar.html", function(data) {
@@ -2556,6 +2554,10 @@ $(document).ready(function(){
     $.get("../../../bootstrap/inc/footer.html", function(data) {
         $("#footer").html(data);
     });
+});
+</script>
+<script>
+$(document).ready(function(){
 
     $( "#SubmitExampleValidateForm" ).validate({
 
@@ -2604,7 +2606,6 @@ $(document).ready(function(){
         $("#marsroverphotoexplorer2").slideToggle("slow");
     });
 }); 
-
 </script>
 </body>
 </html>
