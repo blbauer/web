@@ -1,4 +1,8 @@
-async function GetStock() {
+function GetTemp() {
+    DisplayTemp();
+}
+
+async function DisplayTemp() {
     "use strict";
 
     // Get a reference to the form - Use the ID of the form
@@ -7,40 +11,31 @@ async function GetStock() {
     // If all of the form elements are valid, the get the form values
     if (form.valid()) {
         
-        let StockSymbol = document.getElementById("StockSymbol").value;
-        let apiKey = "35eaVfKsObXpSg2O4kMLj9udr2DgVW1f"
-        let FromDate = document.getElementById("FromDate").value;
-        let ToDate = document.getElementById("ToDate").value;
+        let Location = document.getElementById("Location").value;
+        let myURL1 = "https://geocoding-api.open-meteo.com/v1/search?name=" + Location;
 
-        /* URL for AJAX Call */
-        let myURL1 = "https://api.polygon.io/v3/reference/tickers/" + StockSymbol + "?apiKey=" + apiKey;
-        /* Make the AJAX call */
         let msg1Object = await fetch(myURL1);
         /* Check the status */
         if (msg1Object.status >= 200 && msg1Object.status <= 299) {            
             let msg1JSONText = await msg1Object.text();
             // Parse the JSON string into an object
             let msg1 = JSON.parse(msg1JSONText);
-            /* Your code to process the result goes here - 
-               display the returned message */
-            document.getElementById("company").innerHTML = msg1.results.name;
-            document.getElementById("address").innerHTML = msg1.results.address.address1 + ", " + msg1.results.address.city + ", " 
-                + msg1.results.address.state + "   " + msg1.results.address.postal_code;
-            document.getElementById("employees").innerHTML = msg1.results.total_employees;
-            document.getElementById("description").innerHTML = msg1.results.sic_description;
-            document.getElementById("url").innerHTML = msg1.results.homepage_url;
-            document.getElementById("url").href = msg1.results.homepage_url;
+            /* Your code to process the result goes here - display the returned message */
+            if (msg1.results.length > 0) {
+                let name = msg1.results[0].name;
+                let latitude = msg1.results[0].latitude;
+                let longitude = msg1.results[0].longitude;
+                let state = msg1.results[0].admin1;
+                let country = msg1.results[0].country;
+                document.getElementById("geolocation").innerHTML = name + ", " + state + ", " + country;
+
+            }
+
         }
-        else {
-            /* AJAX complete with error - probably invalid stock ticker symbol */
-                /* Your code to process the result goes here - 
-                   display the returned message */
-            alert("Stock Not Found - Status: " + msg1Object.status)
-            return;
-        }        
  
         /* URL for AJAX Call */
-        let myURL2 = "https://api.polygon.io/v2/aggs/ticker/" + StockSymbol + "/range/1/day/" + FromDate + "/" + ToDate + "?unadjusted=false&sort=asc&limit=32&apiKey=" + apiKey;
+        let myURL2 = "https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&hourly=temperature_2m&temperature_unit=fahrenheit"
+
         /* Make the AJAX call */
         let msg2Object = await fetch(myURL2);
         /* Check the status */
@@ -48,71 +43,41 @@ async function GetStock() {
             let msg2JSONText = await msg2Object.text();
             // Parse the JSON string into an object
             let msg2 = JSON.parse(msg2JSONText);
-            /* Your code to process the result goes here - 
-               display the returned message */
-                /* Your code to process the result goes here  
-                    display the returned message */
-                let stockdate = [];
-                let stockvalue = [];
-                let stockvolume = [];
-                let numdays = msg2.results.length;
-                if (numdays > 0) {
-                    for (let i = 0; i < numdays; i++) {
-                        /* stock close value */
-                        stockvalue[i] = msg2.results[i].c;
-                        /* stock volume */
-                        stockvolume[i] = msg2.results[i].v;
-                        /* date is in Unix milleseconds - create a temporary date variable */
-                        let tempdate = new Date(msg2.results[i].t);
-                        /* extract the date string from the value */
-                        stockdate[i] = tempdate.toLocaleDateString();
-                    }
-                }
+            /* Your code to process the result goes here - display the returned message */
+            let tempdate = [];
+            let tempvalue = [];
+            let numtemps = msg2.hourly.temperature_2m.length;
 
-                let stockvaluetable = "";
-                if (numdays > 0) {
-                    stockvaluetable = stockvaluetable + "<table><caption>Stock Price</caption><tr><th>Date</th><th>Price</th></tr>";
-                    for (let i = 0; i < numdays; i++) {
-                        stockvaluetable = stockvaluetable + "<tr><td>" + stockdate[i] + "</td><td>" + stockvalue[i] + "</td></tr>";
-                    }
-                    stockvaluetable = stockvaluetable + "</table>"
-                    document.getElementById("StockValueTable").innerHTML = stockvaluetable;
+            if (numtemps > 0) {
+                for (let i = 0; i < numtemps; i++) {
+                    /* temperature value */
+                    tempvalue[i] = msg2.hourly.temperature_2m[i];
+                    /* Convert date to unixmilliseconds */
+                    let unixmillsec = Date.parse(msg2.hourly.time[i]);
+                    /* Create temporary data variable */
+                    let tmpdate = new Date(unixmillsec);
+                    /* extract the date/time string from the value */
+                    tempdate[i] = tmpdate.toLocaleString();
                 }
-                
-                let stockvolumetable = "";
-                if (numdays > 0) {
-                    stockvolumetable = stockvolumetable + "<table><caption>Stock Volume</caption><tr><th>Date</th><th>Volume</th></tr>";
-                    for (let i = 0; i < numdays; i++) {
-                        stockvolumetable = stockvolumetable + "<tr><td>" + stockdate[i] + "</td><td>" + stockvolume[i] + "</td></tr>";
-                    }
-                    stockvolumetable = stockvolumetable + "</table>"
-                    document.getElementById("StockVolumeTable").innerHTML = stockvolumetable;
-                }
+            }
 
-                let ctx0 = document.getElementById("chartjs-0");
+            let tempvaluetable = "";
+            if (numtemps > 0) {
+                tempvaluetable = tempvaluetable + "<table><caption>Temperature</caption><tr><th>Date</th><th>Temp</th></tr>";
+                for (let i = 0; i < numtemps; i++) {
+                    tempvaluetable = tempvaluetable + "<tr><td>" + tempdate[i] + "</td><td>" + tempvalue[i] + "</td></tr>";
+                }
+                tempvaluetable = tempvaluetable + "</table>"
+                document.getElementById("TempValueTable").innerHTML = tempvaluetable;
+            }
+
+            let ctx0 = document.getElementById("chartjs-0");
                 let myChart0 = new Chart(ctx0, {
                     "type":"line",
                     "data": {
-                        "labels": stockdate,
+                        "labels": tempdate,
                         "datasets":[{"label":"Stock Close",
-                        "data": stockvalue,
-                        "fill":false,
-                        "borderColor":"rgb(75, 192, 192)",
-                        "lineTension":0.1}]},
-                        "options":{ 
-                            responsive: false,
-                            maintainAspectRatio: true,
-                        }
-                    }
-                );
-                
-                let ctx1 = document.getElementById("chartjs-1");
-                let myChart1 = new Chart(ctx1, {
-                    "type":"line",
-                    "data": {
-                        "labels": stockdate,
-                        "datasets":[{"label":"Stock Volume",
-                        "data": stockvolume,
+                        "data": tempvalue,
                         "fill":false,
                         "borderColor":"rgb(75, 192, 192)",
                         "lineTension":0.1}]},
@@ -123,11 +88,12 @@ async function GetStock() {
                     }
                 );
             
-        }
+            }
+            
         else {
             /* AJAX completed with error - probably invalid stock ticker symbol */
             alert("Stock Not Found - Status: " + msg2Object.status)
-            return
+                return
         }
     }
 }

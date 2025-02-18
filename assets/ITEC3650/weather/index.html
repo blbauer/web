@@ -13,51 +13,23 @@
     <form id="myform" onsubmit="return false">
         <div class="formcontainer">
             <h2>Stock Ticker Details</h2>
-            <label for="StockSymbol" class="formlabel" >Enter Symbol: </label>
-            <input type="text" id="StockSymbol" name="StockSymbol" size="6" maxlength="6"
-                    data-rule-required="true"  data-msg-required="Value is Required">
-            <label class="error" for="StockSymbol" id="StockSymbolError"></label><br>
-            <label for="FromDate" class="formlabel">From Date:</label>
-            <input type="date" name="FromDate" id="FromDate" 
-                data-rule-required="true" data-msg-required="From Date is Required">
-            <label id="FromDateError" for="FromDate" class="error"></label>
-            <label for="ToDate" class="formlabel">To Date:</label>
-            <input type="date" name="ToDate" id="ToDate" 
-			     data-rule-required="true" data-msg-required="To Date is Required">
-	    <label id="ToDateError" for="ToDate" class="error"></label>
+            <label for="Location" class="formlabel" >Enter Location: </label>
+            <input type="text" id="Location" name="location" size="20" maxlength="20">
             <br><br>
-            <input type="submit" value="DisplayStock" id="DisplayStock" name="DisplayStock" onclick="GetStock();">
+            <input type="submit" value="DisplayTemp" id="DisplayTemp" name="DisplayTemp" onclick="GetTemp();">
             <input type="submit" formnovalidate value="Clear" id="Clear" name="Clear" onclick="ClearForm();">
-            <hr>
-            <br>
-            <label for="company" class="formlabel">Company: </label>
-            <span id="company"></span><br>
-            <label for="address" class="formlabel">Address: </label>
-            <span id="address"></span><br>
-            <label for="employees" class="formlabel">Employees: </label>
-            <span id="employees"></span><br>
-            <label for="description" class="formlabel">Description: </label>
-            <span id="description"></span><br>
-            <label for="url" class="formlabel">URL: </label>
-            <a id="url"></a><br>
-            <hr>
+            <div id="geolocation"></div>
 
             <div class="clearfix">
                 <div class="img-container">
-                    <span id="StockValueTable"></span>
-                </div>
-                <div class="img-container">
-                    <span id="StockVolumeTable"></span>
+                    <span id="TempValueTable"></span>
                 </div>
             </div>
             <hr>
             
             <div class="clearfix">
                 <div class="img-container">
-                    <canvas id="chartjs-0" width="400" height="400"></canvas>
-                </div>
-                <div class="img-container">
-                    <canvas id="chartjs-1" width="400" height="400"></canvas>
+                    <canvas id="chartjs-0" width="800" height="400"></canvas>
                 </div>
             </div>
         </div>
