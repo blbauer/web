@@ -3,22 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Polygon - Company Details">
+    <meta name="description" content="Temperature">
     <meta name="keywords" content="HTML, CSS,JavaScript, AJAX, jQuery">
     <meta name="author" content="Bruce Bauer">
-    <title>Polygon - Company Details</title>
+    <title>Local Weather</title>
     <link href="assets/style/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <form id="myform" onsubmit="return false">
         <div class="formcontainer">
-            <h2>Stock Ticker Details</h2>
+            <h2>Location Temperature</h2>
             <label for="Location" class="formlabel" >Enter Location: </label>
-            <input type="text" id="Location" name="location" size="20" maxlength="20">
+            <input type="text" id="Location" name="Location" size="30" maxlength="30"       
+            data-rule-required="true"  data-msg-required="Location is Required">
+            <label class="error" for="Location" id="LocationError"></label>
+
             <br><br>
             <input type="submit" value="DisplayTemp" id="DisplayTemp" name="DisplayTemp" onclick="GetTemp();">
             <input type="submit" formnovalidate value="Clear" id="Clear" name="Clear" onclick="ClearForm();">
-            <div id="geolocation"></div>
+            <br><br>
+            <div id="Geolocation"></div>
 
             <div class="clearfix">
                 <div class="img-container">
