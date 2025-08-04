@@ -17,7 +17,7 @@
 </head>
    
     
-<body>
+<body onload="getSections()">
 <div id="navigation"></div>    
     <!-- Page Content -->
     <div class="container">
@@ -3021,7 +3021,19 @@ $( "#SelectExampleValidateForm" ).validate({
 <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script></div> <!-- /container -->        
 <script>
+    function getSections() {
+        getText("../../../bootstrap/inc/navigation3.html", "navigation");
+        getText("../../../bootstrap/inc/sidebar.html", "sidebar");
+        getText("../../../bootstrap/inc/footer.html", "footer");
+    }
+    async function getText(file, elementId) {
+        let myObject = await fetch(file);
+        let myText = await myObject.text();
+        document.getElementById(elementId).innerHTML = myText;
+    }
+/*
 $(document).ready(function(){
+    
   $.get("../../../bootstrap/inc/navigation3.html", function(data) {
     $("#navigation").html(data);
   });
@@ -3031,7 +3043,8 @@ $(document).ready(function(){
   $.get("../../../bootstrap/inc/footer.html", function(data) {
     $("#footer").html(data);
   });
-}); 
+});
+*/ 
 </script>
 <script>
 $(document).ready(function(){

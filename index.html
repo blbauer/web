@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="bootstrap/css/main.css">
 </head>
    
-<body onload="getsections()">
+<body onload = "getSections()">
     <!-- Page Content -->
     <div class="container">
         <nav id="navigation"></nav>
@@ -123,30 +123,16 @@
 <script src="bootstrap/js/vendor/bootstrap.min.js"></script>
 <script src="bootstrap/js/main.js"></script>
 <script>
-function getsections() {
-    getText("bootstrap/inc/navigation.html", "navigation");
-    getText("bootstrap/inc/sidebar.html", "sidebar");
-    getText("bootstrap/inc/footer.html", "footer");
-}
-async function getText(file, elementid) {
-  let myObject = await fetch(file);
-  let myText = await myObject.text();
-  document.getElementById(elementid).innerHTML = myText;
-}
-/*
-$(document).ready(function(){
-    
-    $.get("bootstrap/inc/navigation.html", function(data) {
-      $("#navigation").html(data);
-    });
-    $.get("bootstrap/inc/sidebar.html", function(data) {
-      $("#sidebar").html(data);
-    });
-    $.get("bootstrap/inc/footer.html", function(data) {
-      $("#footer").html(data);
-    });
-  }); 
-*/
+    function getSections() {
+        getText("bootstrap/inc/navigation.html", "navigation");
+        getText("bootstrap/inc/sidebar.html", "sidebar");
+        getText("bootstrap/inc/footer.html", "footer");
+    }
+    async function getText(file, elementId) {
+        let myObject = await fetch(file);
+        let myText = await myObject.text();
+        document.getElementById(elementId).innerHTML = myText;
+    }
 </script>
 </body>
 </html>
