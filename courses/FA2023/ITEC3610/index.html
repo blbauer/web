@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="../../../bootstrap/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../../bootstrap/css/main.css">
 </head>
-   
     
 <body onload = "includeHTML();">
     <!-- Page Content -->
@@ -3018,32 +3017,7 @@ $( "#SelectExampleValidateForm" ).validate({
 <script src="../../../bootstrap/js/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script></div> <!-- /container -->        
-<script>
-    function getSections() {
-        /*getText("../../../bootstrap/inc/navigation3.html", "navigation");
-        getText("../../../bootstrap/inc/sidebar.html", "sidebar");
-        getText("../../../bootstrap/inc/footer.html", "footer");*/
-    }
-    async function getText(file, elementId) {
-        let myObject = await fetch(file);
-        let myText = await myObject.text();
-        document.getElementById(elementId).innerHTML = myText;
-    }
-/*
-$(document).ready(function(){
-    
-  $.get("../../../bootstrap/inc/navigation3.html", function(data) {
-    $("#navigation").html(data);
-  });
-  $.get("../../../bootstrap/inc/sidebar.html", function(data) {
-    $("#sidebar").html(data);
-  });
-  $.get("../../../bootstrap/inc/footer.html", function(data) {
-    $("#footer").html(data);
-  });
-});
-*/ 
-</script>
+
 <script>
 $(document).ready(function(){
     $("#btnERDFigure1").click(function(){
@@ -3138,46 +3112,5 @@ $(document).ready(function(){
 }); 
     
 </script>
-<!-- Day 17 Lecture Start -->
-<!--
-<div id="FA2022ITEC3610Day17">
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h3>March 14, 2018</h3>
-        </div>
-        <div class="panel-body">
-                        
-  -->          <!-- Windows Section Start -->
-    <!--
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4><strong>Cloud 9</strong></h4>
-                </div>
-                <div class="panel-body">
-                    <p>Getting Started with Cloud 9:</p>
-                    <ul>
-                        <li>Login to you email and locate the invitation to join Cloud 9.  Click on the link.</li>
-                        <li>You will be asked to enter a username, email, and password</li>
-                        <li>Click on add a new workspace.  Give the workspace a name of itecsapphire. Use a type of "PHP, Apache, and MySQL"</li>
-                        <li>Note the files in your directory structure. Since Apache is running, you can access the webserver at https://&lt;yourworkspace&gt;-&lt;yourusername&gt;.c9users.io, such as https://itecsapphire-blbauer.c9users.io</li>
-                        <li>On the "BASH" tab, enter the following: see <a href="https://community.c9.io/t/setting-up-phpmyadmin/1723">https://community.c9.io/t/setting-up-phpmyadmin/1723</a> for more documentation.
-                            <ul>
-                                <li><strong>mysql-ctl install</strong> - This will install the MySQL database.  Be sure you run this only one time, else it will delete all of the MySQL databases. You will get a prompt, but just be aware of what it is doing.</li>
-                                <li><strong>phpmyadmin-ctl install</strong> - This will install phpmyadmin, which is a web tool to administer the MySQL database.</li>
-                                <li><strong>mysql-ctl start</strong> - Make sure that MySQL is started</li>
-                                <li>You can access the control panel at https://&lt;yourworkspace&gt;-&lt;yourusername&gt;.c9users.io/phpmyadmin, such as https://itecsapphire-blbauer.c9users.io/phpmyadmin.  When prompted for credentials, use your username and a blank password.</li>
-                            </ul>
-                        </li>
-                        <li><strong>Do not delete any of the existing databases in MySQL.</strong> They are needed to run Cloud 9 and MySQL.</li>
-                        <li>To close your workspace, click on your avatar and select logoff.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>  --><!-- End Lecture Body -->
-<!--
-</div>  --><!-- End Lecture Panel -->
-<!--    <hr>
-</div>  --><!-- End Day -->
-    
 </body>
 </html>
