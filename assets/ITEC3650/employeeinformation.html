@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Employee Form</title>
+    <meta charset="UTF-8">
+<!-- The following should be a file in the "style" folder -->
+    <style>
+    .formlabel {
+        display: inline-block;
+        width: 100px;
+        text-align: right;
+        padding: 5px;
+    }
+    .error {
+        color: red;
+        padding-left: 5px;
+    }
+    </style>
+</head>
+
+<body>
+<form id="EmployeeForm" action="https://brucebauer.info/assets/ITEC3650/datadump.php">
+<h2>Employee Information</h2>
+<label for="FirstName" class="formlabel">First Name: </label>
+<input type="text" id="FirstName" name="FirstName" size="30" maxlength="30"
+          data-rule-required="true"  data-msg-required="First Name is Required" >
+<label for="FirstName" class="error"></label>
+<br/>
+    
+<label for="LastName" class="formlabel">Last Name: </label>
+<input type="text" id="LastName" name="LastName" size="30" maxlength="30"
+         data-rule-required="true"  data-msg-required="Last Name is Required" >
+<label for="LastName" class="error"></label>
+<br/>
+    
+<label for="Dependents" class="formlabel" id="DependentsLabel">Dependents: </label>
+<input class="forminput" id="Dependents" name="Dependents" type="text" maxlength="2" size="2"
+       data-rule-required="true"  data-msg-required="Number of Dependents is Required" 
+       data-rule-number="true" data-msg-number="Please Enter the Number of Dependents"
+       data-rule-min="0" data-msg-min="Number of Dependents must be greater than or equal to zero"
+       data-rule-max="10" data-msg-max="Number of Dependents must be less than or equal to 10">
+<label for="Dependents" class="error"></label>
+<br/>
+
+<label for="Location" class="formlabel" id="LocationLabel">Location: </label>
+<select id="Location" name="Location"
+        data-rule-required="true" data-msg-required="Location is Required">
+    <option value="">Select a Location...</option>
+    <option value="Little Rock">Little Rock</option>
+    <option value="North Little Rock">North Little Rock</option>
+    <option value="Conway">Conway</option>
+    <option value="Benton">Benton</option>
+</select>
+<label for="Location" class="error"></label>
+<br/>
+
+<label for="Gender" class="formlabel" id="GenderLabel">Gender:</label>
+<label for="GenderMale">
+    <input type="radio" id="GenderMale" name="Gender" value="Male"
+           data-rule-required="true"  data-msg-required="Gender is Required" /> Male
+</label>
+<label for="GenderFemale">
+    <input type="radio" id="GenderFemale" name="Gender" value="Female"/> Female
+</label>
+<label for="GenderOther">
+    <input type="radio" id="GenderOther" name="Gender" value="Other"/> Other
+</label>
+<label for="Gender" class="error"></label>
+<br/>
+
+<label for="Medical" class="formlabel" id="MedicalLabel">Insurance:</label>
+<input type="checkbox" id="Medical" name="Medical" value="Med"
+      data-rule-required="true"  data-msg-required="Medical Insurance is Required" >Medical Insurance
+<label for="Medical" class="error"></label>
+<br/>
+
+<label for="Dental" class="formlabel" id="dentalLabel"></label>
+<input type="checkbox" id="Dental" name="Dental" value="Den">Dental Insurance
+<br/>
+
+<label for="Vision" class="formlabel" id="visionLabel"></label>
+<input type="checkbox" id="Vision" name="Vision" value="Vis">Vision Insurance<br>
+<br/><br/>
+
+<input type="submit" value="Submit Employee Form">
+</form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.min.js"></script>
+
+<!-- The following should be a file in your js folder -->
+<script>
+$( "#EmployeeForm" ).validate({
+
+});
+</script>
+</body>
+</html>
