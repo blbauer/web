@@ -1,0 +1,2608 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Bruce Bauer - E-Commerce Lectures and Resources</title>
+    <meta name="description" content="E-Commerce and Information Technology Lectures">
+    <meta name="keywords" content="E-Commerce, HTML, CSS, PHP ,JavaScript">
+    <meta name="author" content="Bruce Bauer">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../../../bootstrap/css/modern-business.css">
+    <link rel="stylesheet" href="../../../bootstrap/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../../bootstrap/css/main.css">
+    <script src="../../../bootstrap/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <style>
+       .error {
+        color: red;
+        padding-left: 5px;
+        }
+        .nodot {
+            list-style-type: none;
+        }
+    </style>
+
+</head>
+<body onload = "includeHTML();">
+    <!-- Page Content -->
+    <div class="container">
+        <nav id="navigation" w3-include-html="../../../bootstrap/inc/navigation3.html"></nav>
+        <!-- Marketing Icons Section -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">
+                    ITEC 3650 - Guided Application in IT and Industry Processes
+                </h1>
+            </div> <!-- /.screen col-lg-12 -->
+
+        <!-- Section Start -->
+            <div class="col-md-9">
+                
+<!-- EIT Activites Section Start -->
+
+<div id="SP2026ITEC3650EITActivities">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>CSTEM Events</h3>
+        </div>
+        <div class="panel-body">
+        <h4>Presentations</h4>
+                <ul>
+                    <li>Meet in the CSTEM Auditorium</li>
+                    <li><a href="https://docs.google.com/presentation/d/e/2PACX-1vQuXZQudimBrWVNdKeGkcoyxGiaGl2fcFC9gpEJ4wKpveWy759MTnSW0r7GGzpsWzucV-Y_G-03VrY_/pub?start=false&loop=false&delayms=3000">Project Presentations</a></li>
+                </ul>   
+<!--
+            <h4>Career Fair</h4>
+            <ul>
+                <li>Sign-up for the Career Fair at <a href="https://ualr.edu/eit/career-fair/students/">https://ualr.edu/eit/career-fair/students/</a> where you can upload your resume.  You can see an example of my resume at <a href="https://blbauer.github.io/portfolio/">https://blbauer.github.io/portfolio/</a></li>
+                <li><strong>Feb 13</strong> - UA Little Rock STEM Career Fair - Jack Stephens Center  - 12pm-3pm.  Be sure to preregister using Handshake at <a href="https://ualr.edu/cstem/career-fair-2/">UA Little Rock STEM Career Fair</a> Registration</li>
+            </ul>-->
+        </div>
+    </div>
+</div>
+
+<!-- Day 1 Lecture Start -->
+<!--
+<div id="SP2026ITEC3650Day1">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>January 21, 2022</h3>
+        </div>
+        <div class="panel-body">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Web Form Submission</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li><a href="https://www.w3schools.com/html/html_forms.asp">HTML Forms, Get vs. Post</a></li>
+                        <li><a href="https://www.w3schools.com/html/html_form_elements.asp">HTML Form Elements</a></li>
+                        <li><a href="https://www.w3schools.com/html/html_form_input_types.asp">HTML Input Types</a></li>
+                    </ul>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Input Type="Text"</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <form id="SubmitExampleForm" action="https://brucebauer.info/assets/ITEC3650/datadump.php" >
+<pre>
+&lt;form id="SubmitExampleForm" action="https://brucebauer.info/assets/ITEC3650/datadump.php"&gt;
+&lt;input type="submit" value="SubmitExample" Name="SubmitButton"&gt;
+&lt;label for="Name"&gt;Name: &lt;/label&gt;
+&lt;input type="text" id="Name" name="Name" size="30" maxlength="10"&gt;
+&lt;/form&gt;
+</pre>
+                    <input type="submit" value="SubmitExample" Name="SubmitButton">
+                    <label for="Name">Name: </label>
+                    <input type="text" id="Name" name="Name" size="30" maxlength="10">
+                </form>
+                </div>
+                </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Input Type="Password"</strong></h4>
+                </div>
+                <div class="panel-body">
+
+            <form id="PasswordExampleForm" action="https://brucebauer.info/assets/ITEC3650/datadump.php" >
+<pre>
+&lt;form id="PasswordExampleForm" action="https://brucebauer.info/assets/ITEC3650/datadump.php"&gt;
+&lt;input type="submit" value="PasswordExample" Name="PasswordButton"&gt;
+&lt;label for="Password"&gt;Password: &lt;/label&gt;
+&lt;input type="Password" id="Password" Name="Password"&gt;
+&lt;/form&gt;
+</pre>
+            <input type="submit" value="PasswordExample" name="PasswordButton">
+            <label for="Password">Password: </label>
+            <input type="password" id="Password" name="Password">
+            </form>
+            </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Input Type="Reset"</strong></h4>
+                </div>
+                <div class="panel-body">
+        <form id="ResetExampleForm" action="https://brucebauer.info/assets/ITEC3650/datadump.php" >
+<pre>
+&lt;form id="ResetExampleForm" action="https://brucebauer.info/assets/ITEC3650/datadump.php"&gt;
+&lt;input type="reset" value="ResetExample" Name="ResetButton"&gt;
+&lt;label for="Address"&gt;Address: &lt;/label&gt;
+&lt;input type="text" id="Address" name="Address"&gt;
+&lt;/form&gt;
+</pre> 
+            <input type="reset" value="ResetExample" name="ResetButton">
+            <label for="Name">Address: </label>
+            <input type="text" id="Address" name="Address">
+        </form>
+        </div>
+        </div>
+    
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Input Type="Radio"</strong></h4>
+                </div>
+                <div class="panel-body">
+        <form id="RadioExampleForm" action="https://brucebauer.info/assets/ITEC3650/datadump.php" >
+<pre>
+&lt;form id="RadioExampleForm" action="https://brucebauer.info/assets/ITEC3650/datadump.php"&gt;
+&lt;input type="submit" value="RadioExample" name="RadioButton"&gt;
+&lt;label&gt;Cars: &lt;/label&gt;
+&lt;label for="Chevrolet"&gt;&lt;input type="radio" name="car" id="Chevrolet" value="Chevrolet"&gt;Chevy&lt;/label&gt;
+&lt;label for="Ford"&gt;&lt;input type="radio" name="car" id="Ford" value="Ford"&gt;Ford Motors&lt;/label&gt;
+&lt;label for="Dodge"&gt;&lt;input type="radio" name="car" id="Dodge" value="Dodge"&gt;Dodge Ram&lt;/label&gt;
+&lt;/form&gt;
+</pre>
+            <input type="submit" value="RadioExample" name="RadioButton">
+            <label>Cars: </label>
+            <label for="Chevrolet"><input type="radio" name="car" id="Chevrolet" value="Chevrolet">Chevy</label>
+            <label for="Ford"><input type="radio" name="car" id="Ford" value="Ford">Ford Motors</label>
+            <label for="Dodge"><input type="radio" name="car" id="Dodge" value="Dodge">Dodge Ram</label>
+        </form>
+        </div>
+        </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Input Type="Checkbox"</strong></h4>
+                </div>
+                <div class="panel-body">
+        <form id="CheckboxExampleForm" action="https://brucebauer.info/assets/ITEC3650/datadump.php" >
+<pre>
+&lt;form id="CheckboxExampleForm" action="https://brucebauer.info/assets/ITEC3650/datadump.php"&gt;
+&lt;input type="submit" value="CheckboxExample" name="CheckboxButton"&gt;
+&lt;label&gt;Fruits: &lt;/label&gt;
+&lt;label for="Apple"&gt;&lt;input type="checkbox" name="fruit1" id="Apple" value="Apple"&gt;Red Apple&lt;/label&gt;
+&lt;label for="Pear"&gt;&lt;input type="checkbox" name="fruit2" id="Pear" value="Pear"&gt;Green Pear&lt;/label&gt;
+&lt;label for="Banana"&gt;&lt;input type="checkbox" name="fruit3" id="Fig" value="Fig"&gt;Brown Fig&lt;/label&gt;
+&lt;/form&gt;
+</pre>
+            <input type="submit" value="CheckboxExample" name="CheckboxButton">
+            <label>Fruits: </label>
+            <label for="Apple"><input type="checkbox" name="fruit1" id="Apple" value="Apple">Red Apple</label>
+            <label for="Pear"><input type="checkbox" name="fruit2" id="Pear" value="Pear">Green Pear</label>
+            <label for="Fig"><input type="checkbox" name="fruit3" id="Fig" value="Fig">Brown Fig</label>
+        </form>
+        </div>
+        </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Input Type="Select"</strong></h4>
+                </div>
+                <div class="panel-body">
+        <form id="SelectExampleForm" action="https://brucebauer.info/assets/ITEC3650/datadump.php" >
+<pre>
+&lt;form id="SelectExampleForm" action="https://brucebauer.info/assets/ITEC3650/datadump.php"&gt;
+&lt;input type="submit" value="SelectExample" name="SelectButton">
+&lt;label>Auto: &lt;/label>
+&lt;select name="Auto" id="Auto"&gt;
+    &lt;option value=""&gt;Select an Auto...&lt;/option&gt;
+    &lt;option value="Volvo"&gt;Volvo (Latin for 'I roll')&lt;/option&gt;
+    &lt;option value="Saab"&gt;Saab (Swedish Aeroplane AB)&lt;/option&gt;
+    &lt;option value="Mercedes (Mercedes-Benz"&gt;Mercedes (Mercedes-Benz)&lt;/option&gt;
+    &lt;option value="Audi"&gt;Audi (Auto Union Deutschland Ingolstadt)&lt;/option&gt;
+&lt;/select>
+&lt;/form&gt;
+</pre>
+            <input type="submit" value="SelectExample" name="SelectButton">
+            <label>Auto: </label>
+            <select name="Auto" id="Auto">
+                <option value="">Select an Auto...</option>
+                <option value="Volvo">Volvo (Latin for 'I roll')</option>
+                <option value="Saab">Saab (Swedish Aeroplane AB)</option>
+                <option value="Mercedes">Mercedes</option>
+                <option value="Audi">Audi (Auto Union Deutschland Ingolstadt)</option>
+            </select>
+        </form>
+        </div>
+        </div>
+
+                    
+                <div class="well">
+                    <p><strong>Assignment - Due January 23 at the beginning of class - </strong> In your Repl.it website, create a new subproject called <strong>Validation</strong>.  As closely as possible, create the web form in index.html using the image below.  When complete, you should be able to see the values when you submit the form.  You will need this assignment for your next class period.</p>
+                    <button id="btnNewPatientRegistration">Click to view figure</button><br>
+                    <div id="NewPatientRegistration" class="text-block text-center" style="display: none">
+                        <br>
+                        <figure class="figure">
+                        <br>
+                        <img class="figure-img img-fluid rounded img-thumbnail" src="/img/ITEC/newpatientregistration.JPG" alt="New Patient Registration">
+                            <figcaption class="figure-caption h3"><strong>New Patient Registration</strong></figcaption>
+                        </figure>
+                    </div>
+                    <br>
+
+                        <ul>
+                            <li>Form Action - https://brucebauer.info/assets/ITEC3650/datadump.php</li>
+                            <li>First Name - name=FirstName, size=30, maxlength=30</li>
+                            <li>Middle Initial - name=MiddleInitial, size=1, maxlength=1</li>
+                            <li>Last Name - name=LastName, size=30, maxlength=30</li>
+                            <li>Email - name=Email, size=30, maxlength=30</li>
+                            <li>Sex - name=Sex
+                                <ul>
+                                    <li>Male returns "M"</li>
+                                    <li>Female returns "F"</li>
+                                    <li>N/A returns "N"</li>
+                                </ul>
+                            </li>
+                            <li>Birthday - name=Birthday, size=8, maxlength=8</li>
+                            <li>Height - name=Height, size=3, maxlength=3</li>
+                            <li>Weight - name=Weight, size=3, maxlength=3</li>
+                            <li>Phone Number - name=PhoneNumber, size=14, maxlength=14</li>
+                            <li>Marital Status - name=MaritalStatus
+                                <ul>
+                                    <li>Single returns "S"</li>
+                                    <li>Married returns "M"</li>
+                                    <li>Divorced returns "D"</li>
+                                    <li>Legally Separated returns "L"</li>
+                                    <li>Widowed returns "W"</li>
+                                </ul>
+                            </li>
+                            <li>Address - name=Address, size=30, maxlength=30</li>
+                            <li>City - name=City, size=30, maxlength=30</li>
+                            <li>State - name=State, size=3, Displays long state name, returns 2 character state code.  (Hint: search "html state dropdown" to eliminate some typing)</li>
+                            <li>Zip - name=Zip, size=5, maxlength=5</li>
+                            <li>Taking Medications - name=Medications
+                                <ul>
+                                    <li>Yes returns "Y"</li>
+                                    <li>No returns "N"</li>
+                                </ul>
+                            </li>
+                            <li>Medications - name=MedicationsList, rows=3, cols=30</li>
+                        </ul>
+                        <p><strong>How do I force the labels to be right justified?</strong></p>
+                        <p>Create the following class in your .CSS file and add the class to each form label.  You may have to adjust the width based on the length of your lables.</p>
+<pre>
+ .formlabel {
+        display: inline-block;
+        width: 150px;
+        text-align: right;
+        padding: 5px;
+        font-weight: bold;
+    }
+</pre>
+        
+                    </div>    
+                </div>
+            </div>
+        </div>  <!-- End Lecture Body
+    </div>  <!-- End Lecture Panel
+    <hr>
+</div>  <!-- End Day -->
+
+<!-- Day 2 Lecture Start -->
+<!--
+<div id="SP2026ITEC3650Day2">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>January 23, 2020</h3>
+        </div>
+        <div class="panel-body">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>JQuery</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li><a href="https://www.w3schools.com/html/html_form_attributes.asp">HTML Form Attributes</a></li>
+                        <li><a href="https://www.w3schools.com/jquery/default.asp">jQuery HOME</a></li>
+                        <li><a href="https://www.w3schools.com/jquery/jquery_intro.asp">jQuery Intro</a></li>
+                        <li><a href="https://www.w3schools.com/jquery/jquery_get_started.asp">jQuery Getting Started</a></li>
+                        <li><a href="https://www.w3schools.com/jquery/jquery_syntax.asp">jQuery Syntax</a></li>
+                    </ul>
+                </div>
+                <p>You can include the latest version of JQuery using the following snippet:</p>
+                <div class="well">
+                    &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"&gt;&lt;/script&gt;
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>JQuery Validation</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li><a href="https://jqueryvalidation.org/">jQuery Validation Home</a></li>
+                        <li><a href="https://jqueryvalidation.org/documentation/">jQuery Validation Documentation</a></li>
+                        <li><a href="/assets/ITEC3650/employeeinformation.html">Example of jQuery Validation</a></li>
+                        <li>JQuery Validators
+                        <ul>
+                            <li>data-rule-required="true" – Makes the element required</li>
+                            <li>data-rule-minlength="10" – Makes the element require a given minimum length</li>
+                            <li>data-rule-maxlength="20" – Makes the element require a given maximum length</li>
+                            <li>data-rule-min="2" – Makes the element require a given minimum</li>
+                            <li>data-rule-max="10" – Makes the element require a given maximum</li>
+                            <li>data-rule-email="true" – Makes the element require a valid email</li>
+                            <li>data-rule-url="true" – Makes the element require a valid url</li>
+                            <li>data-rule-date="true" – Makes the element require a date (MM/DD/YYYY)</li>
+                            <li>data-rule-dateISO="true" – Makes the element require an ISO date (YYYY-MM-DD)</li>
+                            <li>data-rule-number="true" – Makes the element require a decimal number</li>
+                            <li>data-rule-digits="true" – Makes the element require digits only</li>
+                            <li>data-rule-creditcard="true" – Makes the element require a credit card number</li>
+                            <li>data-rule-phoneUS="true" – Validate for valid US phone number</li>
+                        </ul>
+                        JQuery Validators Custom Messages<br>
+                        <ul>
+                            <li>data-msg-required="First Name is Required"</li>
+                            <li>data-msg-minlength="Password must be at least 10 characters"</li>
+                            <li>data-msg-maxlength="Address must be less than 20 characters"</li>
+                            <li>data-msg-min="Age must be 18 years or greater"</li>
+                            <li>data-msg-max="You can purchase only 5 items"</li>
+                            <li>data-msg-email="Invalid Email"</li>
+                            <li>data-msg-url="Invalid URL - example: http://google.com"</li>
+                            <li>data-msg-date="Date must be MM/DD/YYYY format"</li>
+                            <li>data-msg-dateISO="Date must be YYYY-MM-DD format"</li>
+                            <li>data-msg-number="You must enter a decimal number"</li>
+                            <li>data-msg-digits="Must be an integer"</li>
+                            <li>data-msg-creditcard="Invalid Credit Card"</li>
+                            <li>data-msg-phoneUS="Invalid Phone Number"r</li>
+                        </ul>
+                        JQuery Validator Custom Message Placement
+                        <ul>
+                            <li>The default is to place the message next to the element being validated</li>
+                            <li>You can place the error message anywhere on for by
+                                <ul>
+                                    <li>Using a "Label" tag</li>
+                                    <li>Using the "for" attribute where the value is the "Name" of the field (not the "id")</li>
+                                    <li>Using the error class</li>
+                                </ul>
+                            </li>
+                            <li>You can style the error message using the error class in CSS</li>
+                        </ul>
+                        </li>
+                    </ul>
+                <p>You can include the latest version of JQuery Validation using the following snippet:</p>
+                <div class="well">
+<pre>
+&lt;script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"&gt;&lt;/script&gt;
+</pre>
+                </div>
+                <p><strong>Note that JQuery Validation requires an empty validator.</strong>  JQuery Validation is powerful and you can add your own custom javascript for validation.  For these exercises, we won't be doing using any custom javascript, but you will have to ahve a empty validator.  To do this, you will add the following code to your project, using the name of your form.  Here is an example:</p>
+                <div class="well">
+<pre>
+&lt;form id="MyFormName" action="https://brucebauer.info/assets/ITEC3650/datadump.php"&gt;
+        
+&lt;/form&gt;
+&lt;script&gt;
+$( "#MyFormName" ).validate({
+
+});                    
+&lt;/script&gt;
+</pre>                    
+                </div>
+
+                </div>
+            </div>        
+                    
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Input Type="Text"</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <form id="SubmitExampleValidateForm" action="https://brucebauer.info/assets/ITEC3650/datadump.php" >
+<pre>
+&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"&gt;&lt;/script&gt;
+&lt;style&gt;
+   .error {
+        color: red;
+        padding-left: 5px;
+   }
+&lt;/style&gt;
+&lt;form id="SubmitExampleValidateForm" action="https://brucebauer.info/assets/ITEC3650/datadump.php"&gt;
+&lt;input type="submit" value="SubmitExample" Name="SubmitButton"&gt;
+&lt;label for="Age"&gt;Age:&lt;/label&gt;
+&lt;input type="text" id="Age" name="Age" size="3" maxlength="3"
+       data-rule-required="true"  data-msg-required="Age is Required" 
+       data-rule-number="true" data-msg-number="Age must be a number in years"
+       data-rule-min="18" data-msg-min="Age must be greater than or equal to 18 years"
+       data-rule-max="65" data-msg-max="Age must be less than or equal to 65 years"&gt;
+&lt;label for="Age" class="error"&gt;&lt;/label&gt;&lt;br&gt;
+&lt;/form&gt;
+&lt;script&gt;
+$( "#SubmitExampleValidateForm" ).validate({
+
+});
+&lt;/script&gt;
+</pre>
+                    <input type="submit" value="SubmitExample" Name="SubmitButton">
+                    <label for="Age">Age: </label>
+                    <input type="text" id="Age" name="Age" size="3" maxlength="3"
+                       data-rule-required="true"  data-msg-required="Age is Required" 
+                       data-rule-number="true" data-msg-number="Age must be a number in years"
+                       data-rule-min="18" data-msg-min="Age must be greater than or equal to 18 years"
+                       data-rule-max="65" data-msg-max="Age must be less than or equal to 65 years">
+                    <label for="Age" class="error"></label>
+                </form>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Input Type="Radio"</strong></h4>
+                </div>
+                <div class="panel-body">
+        <form id="RadioExampleValidateForm" action="https://brucebauer.info/assets/ITEC3650/datadump.php" >
+<pre>
+&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"&gt;&lt;/script&gt;
+&lt;style&gt;
+   .error {
+        color: red;
+        padding-left: 5px;
+   }
+&lt;/style&gt;
+&lt;form id="RadioExampleValidateForm" action="https://brucebauer.info/assets/ITEC3650/datadump.php"&gt;
+&lt;input type="submit" value="RadioExample" name="RadioButton"&gt;
+&lt;label&gt;Cars: &lt;/label&gt;
+&lt;label for="Chevrolet"&gt;&lt;input type="radio" name="mycar" id="Chevrolet" value="Chevrolet"
+    data-rule-required="true" data-msg-required="Car is Required" /&gt;Chevrolet&lt;/label&gt;
+&lt;label for="Ford"&gt;&lt;input type="radio" name="mycar" id="Ford" value="Ford"&gt;Ford&lt;/label&gt;
+&lt;label for="Dodge"&gt;&lt;input type="radio" name="mycar" id="Dodge" value="Dodge"&gt;Dodge&lt;/label&gt;
+&lt;label for="mycar" class="error"&gt;&lt;/label&gt;&lt;br&gt;
+&lt;/form&gt;
+&lt;script&gt;
+$( "#RadioExampleValidateForm" ).validate({
+
+});
+&lt;/script&gt;
+</pre>
+            <input type="submit" value="RadioExample" name="RadioButton">
+            <label>Cars: </label>
+            <label for="myChevrolet"><input type="radio" id="myChevrolet" name="mycar" value="Chevrolet" 
+                data-rule-required="true" data-msg-required="Car is Required" />Chevrolet</label>
+            <label for="myFord"><input type="radio" id="myFord" name="mycar" value="Ford" />Ford Motor</label>
+            <label for="myDodge"><input type="radio" id="myDodge" name="mycar" value="Dodge" />Dodge Ram</label>
+            <label for="mycar" class="error"></label><br>
+        </form>
+        </div>
+        </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Input Type="Select"</strong></h4>
+                </div>
+                <div class="panel-body">
+        <form id="SelectExampleValidateForm" action="https://brucebauer.info/assets/ITEC3650/datadump.php" >
+<pre>
+&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"&gt;&lt;/script&gt;
+&lt;style&gt;
+   .error {
+        color: red;
+        padding-left: 5px;
+   }
+&lt;/style&gt;
+&lt;form id="SelectExampleValidateForm" action="https://brucebauer.info/assets/ITEC3650/datadump.php"&gt;
+&lt;input type="submit" value="SelectExample" name="SelectButton">
+&lt;label>Auto: &lt;/label>
+&lt;select name="Auto" id="Auto"
+    data-rule-required="true" data-msg-required="Auto is Required"&gt;
+    &lt;option value=""&gt;Select an Auto...&lt;/option&gt;
+    &lt;option value="Volvo"&gt;Volvo (Latin for 'I roll')&lt;/option&gt;
+    &lt;option value="Saab"&gt;Saab (Swedish Aeroplane AB)&lt;/option&gt;
+    &lt;option value="Mercedes (Mercedes-Benz"&gt;Mercedes (Mercedes-Benz)&lt;/option&gt;
+    &lt;option value="Audi"&gt;Audi (Auto Union Deutschland Ingolstadt)&lt;/option&gt;
+&lt;/select>
+&lt;/form&gt;
+&lt;script&gt;
+$( "#SelectExampleValidateForm" ).validate({
+
+});
+&lt;/script&gt;
+</pre>
+            <input type="submit" value="SelectExample" name="SelectButton">
+            <label>Auto: </label>
+            <select name="myAuto" id="myAuto"
+                data-rule-required="true" data-msg-required="Auto is Required">
+                <option value="">Select an Auto...</option>
+                <option value="Volvo">Volvo (Latin for 'I roll')</option>
+                <option value="Saab">Saab (Swedish Aeroplane AB)</option>
+                <option value="Mercedes">Mercedes (Mercedes-Benz)</option>
+                <option value="Audi">Audi (Auto Union Deutschland Ingolstadt)</option>
+            </select>
+            <label for="myAuto" class="error"></label><br>
+        </form>
+        </div>
+        </div>                    
+ 
+                    <div class="well">
+                        <p><strong>Assignment - Due Tuesday, February 4, at end of day</strong> - Using the <strong>Validation</strong> assignment, add the following validators:</p>
+                        <ul>
+                            <li>First Name - required</li>
+                            <li>Middle Initial - none</li>
+                            <li>Last Name - required</li>
+                            <li>Email - required, email</li>
+                            <li>Sex - required</li>
+                            <li>Birthday - required, date</li>
+                            <li>Height - required, number, minimum 12, maximum 120</li>
+                            <li>Weight - required, number, minimum 10, maximum 500</li>
+                            <li>Phone Number - required, US Phone</li>
+                            <li>Marital Status - required</li>
+                            <li>Address - required</li>
+                            <li>City - required</li>
+                            <li>State - required</li>
+                            <li>Zip - required, 5 digits</li>
+                            <li>Taking Medications - required</li>
+                            <li>Medications - none</li>
+                        </ul>
+                    </div>
+        </div>  <!-- End Lecture Body
+    </div>  <!-- End Lecture Panel
+    <hr>
+</div>  <!-- End Day -->
+
+<!-- Day 1 Lecture Start -->
+<div id="SP2026ITEC3650Day1">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>January 20, 2026</h3>
+        </div>
+        <div class="panel-body">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Introduction to JavaScript</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li><a href="https://www.w3schools.com/js/default.asp">W3Schools JavaScript Home</a></li>
+                        <li><a href="https://www.w3schools.com/js/js_intro.asp">JS Introduction</a></li>
+                        <li><a href="https://www.w3schools.com/js/js_whereto.asp">JS Where To</a></li>
+                        <li><a href="https://www.w3schools.com/js/js_output.asp">JS Output</a></li>
+                        <li><a href="https://www.w3schools.com/js/js_syntax.asp">JS Syntax</a></li>
+                        <li><a href="https://www.w3schools.com/js/js_statements.asp">JS Statements</a></li>
+                        <li><a href="https://www.w3schools.com/jsref/jsref_statements.asp">JS Statement Reference</a></li>
+                        <li><a href="https://www.w3schools.com/js/js_comments.asp">JS Comments</a></li>
+                        <li><a href="https://www.w3schools.com/js/js_variables.asp">JS Variables</a></li>
+                        <li><a href="https://www.w3schools.com/js/js_let.asp">JS Let</a></li>
+                        <li><a href="https://www.w3schools.com/js/js_const.asp">JS Const</a></li>
+                        <li><a href="https://www.w3schools.com/js/js_strict.asp">JS Strict Mode</a></li>
+                        <li><a href="https://www.w3schools.com/js/js_operators.asp">JS Operators</a></li>
+                        <li><a href="https://www.w3schools.com/jsref/jsref_operators.asp">JS Operators Reference</a></li>
+                        <li><a href="https://www.w3schools.com/js/js_arithmetic.asp">JS Arithmetic</a></li>
+                        <li><a href="https://www.w3schools.com/js/js_assignment.asp">JS Assignment</a></li>
+                        <li><a href="https://www.w3schools.com/js/js_datatypes.asp">JS Data Types</a></li>
+                        <li><a href="https://www.w3schools.com/jsref/jsref_isnan.asp">isNaN Function- Not a Number function</a></li>
+                        <li><a href="https://www.w3schools.com/jsref/jsref_parseint.asp">parseInt Function - Converts a string to an integer</a></li>
+                        <li><a href="https://www.w3schools.com/jsref/jsref_parsefloat.asp">parseFloat Function - Converts a string to a floating number</a></li>
+                        <li><a href="https://www.w3schools.com/jsref/jsref_string.asp">String Function - Converts a value to a string</a></li>
+                        <li><a href="https://www.w3schools.com/js/js_popup.asp">JS Popup Alert</a></li>
+                        <li><a href="https://www.w3schools.com/js/js_conventions.asp">JS Style Guide</a></li>
+                        <li><a href="https://www.w3schools.com/js/js_best_practices.asp">JS Best Practices</a></li>
+                        <li><a href="https://www.w3schools.com/js/js_mistakes.asp">JS Mistakes</a></li>
+                    </ul>
+                    <h4>Examples</h4>
+                    <ul>
+                        <li>Update a Web Form Value - <a href="/assets/ITEC3650/example1.html">Example 1</a></li>
+                        <li>Update a Web Form Style - <a href="/assets/ITEC3650/example2.html">Example 2</a></li>
+                        <li>Display a Message - <a href="/assets/ITEC3650/example3.html">Example 3</a></li>
+                        <li>Prompt for a Value - <a href="/assets/ITEC3650/example4.html">Example 4</a></li>
+                        <li>Add 2 Integers - <a href="/assets/ITEC3650/addition.html">Addition of 2 Integers</a></li>
+                    </ul>
+                    <div class="well">
+                        <strong>Assignment - </strong> Read about the <a href="https://developers.google.com/web/tools/chrome-devtools/javascript/">Chrome Debugger</a> and step through the example pages.
+                    </div>
+                </div>
+            </div>
+        </div>  <!-- End Lecture Body -->
+    </div>  <!-- End Lecture Panel -->
+    <hr>
+</div>  <!-- End Day -->
+
+<!-- Day 2 Lecture Start -->
+<div id="SP2026ITEC3650Day2">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>January 23, 2025</h3>
+        </div>
+        <div class="panel-body">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>HTML Document Object Model (DOM)</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li><a href="https://www.w3schools.com/js/js_htmldom.asp">DOM Intro</a></li>
+                        <li><a href="https://www.w3schools.com/js/js_htmldom_methods.asp">DOM Methods</a></li>
+                        <li><a href="https://www.w3schools.com/js/js_htmldom_document.asp">DOM Document</a></li>
+                        <li><a href="https://www.w3schools.com/js/js_htmldom_elements.asp">DOM Elements</a></li>
+                        <li><a href="https://www.w3schools.com/js/js_htmldom_html.asp">DOM HTML</a></li>
+                        <li><a href="https://www.w3schools.com/js/js_htmldom_css.asp">DOM CSS</a></li>
+                        <!--
+                        <li><a href="https://www.w3schools.com/js/js_htmldom_navigation.asp">DOM Navigation</a></li>
+                        <li><a href="https://www.w3schools.com/js/js_htmldom_nodes.asp">DOM Nodes</a></li>
+                        <li><a href="https://www.w3schools.com/js/js_htmldom_nodelist.asp">DOM Nodelist</a></li>
+                        -->
+                    </ul>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>JavaScript Functions</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li><a href="https://www.w3schools.com/js/js_functions.asp">JS Functions</a></li>
+                        <li><a href="https://www.w3schools.com/js/js_function_definition.asp">Function Definitions</a></li>
+                        <li><a href="https://www.w3schools.com/js/js_function_parameters.asp">Function Parameters</a></li>
+                        <li><a href="https://www.w3schools.com/js/js_function_invocation.asp">Function Invocation</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Document Events</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li><a href="https://www.w3schools.com/js/js_events.asp">JavaScript Events</a></li>
+                        <!--
+                        <li><a href="https://www.w3schools.com/js/js_htmldom_animate.asp">DOM Animations</a></li>
+                        <li><a href="https://www.w3schools.com/js/js_htmldom_events.asp">DOM Events</a></li>
+                        <li><a href="https://www.w3schools.com/js/js_htmldom_eventlistener.asp">DOM EventListener</a></li>
+                        <li><a href="https://www.w3schools.com/tags/ref_eventattributes.asp">HTML Events</a></li>
+                        -->
+                    </ul>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Input Type = "Text"</strong></h4>
+                </div>
+                <div class="panel-body">
+<pre>
+&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"&gt;&lt;/script&gt;
+&lt;style&gt;
+   .error {
+        color: red;
+        padding-left: 5px;
+   }
+&lt;/style&gt;
+&lt;form id="TextExampleDOMForm" onsubmit="return false"&gt;
+&lt;input type="submit" value="SubmitExample" Name="SubmitButton" onclick="TextExample()"&gt;
+&lt;label for="txtName"&gt;Name: &lt;/label&gt;
+&lt;input type="text" id="txtName" name="txtName" size="20" maxlength="20"
+    data-rule-required="true"  data-msg-required="Name is Required" &gt;
+&lt;label for="txtName" class="error"&gt;&lt;/label&gt;
+&lt;label id="SubmitExampleValue"&gt;&lt;/label&gt;
+&lt;script&gt;
+function TextExample() 
+{
+    document.getElementById("SubmitExampleValue").innerHTML = document.getElementById("txtName").value;
+}
+$( "#TextExampleDOMForm" ).validate({
+
+});
+&lt;/script&gt;
+&lt;/form&gt;
+</pre>
+            <form id="TextExampleDOMForm" onsubmit="return false">
+            <input type="submit" value="SubmitExample" Name="SubmitButton" onclick="TextExample()">
+            <label for="txtName">Name: </label>
+            <input type="text" id="txtName" name="txtName" size="20" maxlength="20"
+                data-rule-required="true"  data-msg-required="Name is Required">
+            <label for="txtName" class="error"></label>
+            <label id="SubmitExampleValue"></label>
+            <script>
+            function TextExample() 
+            {
+                document.getElementById("SubmitExampleValue").innerHTML = document.getElementById("txtName").value;
+            }
+            </script>
+            </form>
+            </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Input Type="Select"</strong></h4>
+                </div>
+                <div class="panel-body">
+
+<pre>
+&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"&gt;&lt;/script&gt;
+&lt;style&gt;
+   .error {
+        color: red;
+        padding-left: 5px;
+   }
+&lt;/style&gt;
+&lt;form id="SelectExampleDOMForm" onsubmit="return false"&gt;
+&lt;input type="submit" value="SelectExample" name="SelectButton" onclick="SelectExample()"&gt;
+&lt;label&gt;Auto: &lt;/label&gt;
+&lt;select name="selAuto" id="Auto"                
+        data-rule-required="true" data-msg-required="Auto is Required"&gt;
+    &lt;option value=""&gt;Select an Auto...&lt;/option&gt;
+    &lt;option value="Volvo"&gt;Volvo (Latin for 'I roll')&lt;/option&gt;
+    &lt;option value="Saab"&gt;Saab (Swedish Aeroplane AB)&lt;/option&gt;
+    &lt;option value="Mercedes"&gt;Mercedes (Mercedes-Benz)&lt;/option&gt;
+    &lt;option value="Audi"&gt;Audi (Auto Union Deutschland Ingolstadt)&lt;/option&gt;
+&lt;/select&gt;
+&lt;label for="selAuto" class="error"&gt;&lt;/label&gt;
+&lt;span id="SelectExampleValue"&gt;&lt;/span&gt;
+&lt;script&gt;
+function SelectExample() 
+{
+    document.getElementById("SelectExampleValue").innerHTML = document.getElementById("selAuto").value;
+}
+$( "#SelectExampleDOMForm" ).validate({
+
+});
+
+&lt;/script&gt;
+&lt;/form&gt;
+</pre>
+            <form id="SelectExampleDOMForm" onsubmit="return false">
+            <input type="submit" value="SelectExample" name="SelectButton" onclick="SelectExample()">
+            <label>Auto: </label>
+            <select name="selAuto" id="selAuto"
+                data-rule-required="true" data-msg-required="Auto is Required">
+                <option value="">Select an Auto...</option>
+                <option value="Volvo">Volvo (Latin for 'I roll')</option>
+                <option value="Saab">Saab (Swedish Aeroplane AB)</option>
+                <option value="Mercedes">Mercedes (Mercedes-Benz)</option>
+                <option value="Audi">Audi (Auto Union Deutschland Ingolstadt)</option>
+            </select>
+            <label for="selAuto" class="error"></label>
+            <span id="SelectExampleValue"></span>
+            <script>
+            function SelectExample() 
+            {
+                document.getElementById("SelectExampleValue").innerHTML = document.getElementById("selAuto").value;
+            }
+            </script>
+            </form>
+            </div>
+            </div>
+                    
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Summary</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li>If you are using jQueryValidation and do not want to submit it to another webform, use <code>onsubmit="return false"</code> in the &lt;form&gt; tag.</li>
+                        <li>If you are using jQueryValidation use the following to make sure that the form is valid (Assuming &lt;form id="myform"&gt;):
+                                <code>if ($(#myform).valid()) {</code>
+                        </li>
+                        <li>To skip validation while still using a submit-button, add the attribute "formnovalidate" to that input:
+                                <code>&lt;input type="submit" formnovalidate name="cancel" value="Cancel"&gt;</code>
+                        </li>
+                        <li>Use <code>document.getElementByID("myText").value</code> to get/set the value in an input field, such as <code>&lt;input type = "text" id="myText"&gt;</code></li>
+                        <li>Use <code>document.getElementByID("myText").innerHTML</code> to get/set the value of HTML elements, such as <code>&lt;div id = "myText"&gt;</code></li>
+                        <li>You can change the value of an attribute of an HTML element, such as <code>document.getElementById("myImage").src = "landscape.jpg";</code></li>
+                        <li>You can change the value of the style of an HTML element, such as <code>document.getElementByID("myText").style.color = "blue";</code></li>
+                        <li>Remember that anything you time into the keyboard is the data type character.  You cannot do arithmetic on the input unless you convert it using the parseInt() or parseFloat() function</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Example</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li><a href="/assets/ITEC3650/triangle.html">Hypotenuse of a Right Triangle</a></li>
+                        <li><a href="/assets/ITEC3650/triangle/index.html">Hypotenuse of a Right Triangle (using proper folders)</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>  <!-- End Lecture Panel -->
+    <hr>
+</div>  <!-- End Day -->
+
+<!-- Day 3 Lecture Start -->
+<div id="SP2026ITEC3650Day3">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>January 28, 2025</h3>
+        </div>
+        <div class="panel-body">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>JavaScript Debugging</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li><a href="https://www.w3schools.com/js/js_debugging.asp">JS Debugging</a></li>
+                        <li><a href="https://developers.google.com/web/tools/chrome-devtools/javascript/">Chrome Debugging</a>
+                            <ul>
+                                <li>On the Chrome Tool Bar, press the 3 vertical dots->More Tools->Developer Tools</li>
+                                <li>On the Debugger Tool Bar, press "Sources" to see the source code, then select the source file from the directory tree on the left.  You may have to click "Refresh" to see the sourse.</li>
+                                <li>On the Debugger Tool Bar, press the 3 vertical dots->Dock Side->Dock to Bottom</li>
+                                <li>On the Debugger Tool Bar, press the 3 vertical dots->Show Console Drawer.  When the console drawer appears, make sure that the console tab is clicked and not "What's New".</li>
+                            </ul>
+                        </li>
+                        <li><a href="/assets/ITEC3650/triangle.html">Hypotenuse of a Right Triangle</a></li>
+                        <li><a href="/assets/ITEC3650/triangle/index.html">Hypotenuse of a Right Triangle (using proper folders)</a></li>
+                    </ul>
+                </div>
+            </div>
+                    <div class="well">
+                        <p><strong>Assignment - Due in February 9</strong> - for a circle with a given Radius, you can make the following calculations:</p>
+                            <ul>   
+                                <li>Diameter = 2 times Radius</li>
+                                <li>Circumference = 2 times pi times Radius</li>
+                                <li>Area = pi times Radius times Radius</li>
+                                <li>Note that in javascript, pi is represented by "Math.PI"</li>
+                            </ul>
+                        <p>Create a javascript program that</p>
+                            <ul>
+                                <li>Prompts for Radius Value</li>
+                                <li>Validates the Radius Value to ensure that it is a valid, positive real number (Use jQueryValidation)</li>
+                                <li>When the calculate button is pressed, the program
+                                    <ul>
+                                    <li>Converts the string representaion of the number to a floating point number (Use parsefloat)</li>
+                                    <li>Calculates the Diameter, Circumference, and Area of a Circle by creating and using the following functions:
+                                        <ul>
+                                            <li><strong>calcDiameter</strong> - accepts the Radius as a parameter and returns the Diameter</li>
+                                            <li><strong>calcCircumference</strong> - accepts the Radius as a parameter and returns the Circumference</li>
+                                            <li><strong>calcArea</strong> - accepts the Radius as a parameter and returns the Area</li>
+                                        </ul>
+                                    </li>
+                                    <li>Displays the Diameter, Circumference and Area of the circle</li>
+                                    </ul>
+                                </li>
+                                <li>When the Reset button is pressed, the program calls a function named <strong>clearForm</strong> that clears the Radius and results</li>
+                            </ul>
+                        <p>Create a project called <strong>Circle</strong> and put your solution in <strong>index.html</strong>. Here's a <a href = "/assets/ITEC3650/circlestarter.html">starter file</a>.</p>
+                    </div>
+
+        </div>  <!-- End Lecture Body -->
+    </div>  <!-- End Lecture Panel -->
+    <hr>
+</div>  <!-- End Day -->
+
+<!-- Day 4 Lecture Start -->
+<div id="SP2026ITEC3650Day4">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>January 30, 2025</h3>
+        </div>
+        <div class="panel-body">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Work on Circle Assignment - JavaScript Debugging - Continued</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li><a href="https://www.w3schools.com/js/js_debugging.asp">JS Debugging</a></li>
+                        <li><a href="https://developers.google.com/web/tools/chrome-devtools/javascript/">Chrome Debugging</a></li>
+                        <li><a href="/assets/ITEC3650/triangle.html">Hypotenuse of a Right Triangle</a></li>
+                        <li><a href="/assets/ITEC3650/triangle/index.html">Hypotenuse of a Right Triangle (using proper folders)</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>  <!-- End Lecture Body -->
+    </div>  <!-- End Lecture Panel -->
+    <hr>
+</div>  <!-- End Day -->
+
+<!-- Day 5 Lecture Start -->
+<div id="SP2026ITEC3650Day5">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>February 4, 2025</h3>
+        </div>
+        <div class="panel-body">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>If...Then...Else</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li><a href="https://www.w3schools.com/js/js_if_else.asp">JS Conditions</a></li>
+                        <li><a href="https://www.w3schools.com/js/js_comparisons.asp">JS Comparisons</a></li>
+                        <li><a href="https://www.w3schools.com/js/js_switch.asp">JS Switch</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Examples</strong></h4>
+                </div>
+                <div class="panel-body">
+            <h4>Type = "Radio"</h4>  
+<pre>
+&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"&gt;&lt;/script&gt;
+&lt;style&gt;
+   .error {
+        color: red;
+        padding-left: 5px;
+   }
+&lt;/style&gt;
+&lt;form id="RadioExampleValidationCheckForm" onsubmit="return false"&gt;
+&lt;input type="submit" value="RadioExample" name="RadioButton" onclick="RadioExample()"&gt;
+&lt;label&gt;Cars: &lt;/label&gt;
+&lt;label for="rdChevrolet"&gt;&lt;input type="radio" id="rdChevrolet" name="rdcar" value="Chevrolet" 
+    data-rule-required="true" data-msg-required="Car is Required" /&gt;Chevrolet&lt;/label&gt;
+&lt;label for="rdFord"&gt;&lt;input type="radio" id="rdFord" name="rdcar" value="Ford" /&gt;Ford Motor&lt;/label&gt;
+&lt;label for="rdDodge"&gt;&lt;input type="radio" id="rdDodge" name="rdcar" value="Dodge" /&gt;Dodge Ram&lt;/label&gt;
+&lt;label for="rdcar" class="error"&gt;&lt;/label&gt;
+&lt;span id="RadioExampleValue"&gt;&lt;/span&gt;
+&lt;br&gt;
+&lt;/form&gt;
+&lt;script&gt;
+function RadioExample() {
+    if (document.getElementById("rdChevrolet").checked) {
+        document.getElementById("RadioExampleValue").innerHTML = 
+            document.getElementById("rdChevrolet").value;
+    }
+    if (document.getElementById("rdFord").checked) {
+        document.getElementById("RadioExampleValue").innerHTML = 
+            document.getElementById("rdFord").value;
+    }
+    if (document.getElementById("rdDodge").checked) {
+        document.getElementById("RadioExampleValue").innerHTML = 
+            document.getElementById("rdDodge").value;
+    }
+}
+
+$( "#RadioExampleValidationCheckForm" ).validate({
+
+});
+&lt;/script&gt;
+</pre>
+            <form id="RadioExampleValidationCheckForm" onsubmit="return false">
+            <input type="submit" value="RadioExample" name="RadioButton" onclick="RadioExample()">
+            <label>Cars: </label>
+            <label for="rdChevrolet"><input type="radio" id="rdChevrolet" name="rdcar" value="Chevrolet" 
+                data-rule-required="true" data-msg-required="Car is Required" />Chevrolet</label>
+            <label for="rdFord"><input type="radio" id="rdFord" name="rdcar" value="Ford" />Ford Motor</label>
+            <label for="rdDodge"><input type="radio" id="rdDodge" name="rdcar" value="Dodge" />Dodge Ram</label>
+            <label for="rdcar" class="error"></label>
+            <span id="RadioExampleValue"></span>
+            <br>
+            </form>
+            <script>
+            function RadioExample() {
+                if (document.getElementById("rdChevrolet").checked) {
+                    document.getElementById("RadioExampleValue").innerHTML = document.getElementById("rdChevrolet").value;
+                }
+                if (document.getElementById("rdFord").checked) {
+                    document.getElementById("RadioExampleValue").innerHTML = document.getElementById("rdFord").value;
+                }
+                if (document.getElementById("rdDodge").checked) {
+                    document.getElementById("RadioExampleValue").innerHTML = document.getElementById("rdDodge").value;
+                }
+            }
+            </script>
+            <hr>
+
+            <h4>Type = "Checkbox"</h4>  
+<pre>
+&lt;input type="submit" value="CheckboxExample" name="CheckboxButton" onclick="CheckboxExample()"&gt;
+&lt;label&gt;Fruits: &lt;/label&gt;
+&lt;label for="ckApple"&gt;
+    &lt;input type="checkbox" name="ckfruit1" id="ckApple" value="Apple"&gt;Red Apple&lt;/label&gt;
+&lt;label for="ckPear"&gt;
+    &lt;input type="checkbox" name="ckfruit2" id="ckPear" value="Pear"&gt;Green Pear&lt;/label&gt;
+&lt;label for="ckBanana"&gt;
+    &lt;input type="checkbox" name="ckfruit3" id="ckBanana" value="Banana"&gt;Yellow Banana&lt;/label&gt;
+&lt;span id="CheckBoxExampleAppleValue"&gt;&lt;/span&gt;
+&lt;span id="CheckboxExamplePearValue"&gt;&lt;/span&gt;
+&lt;span id="CheckBoxExampleBananaValue"&gt;&lt;/span&gt;
+&lt;script&gt;
+function CheckboxExample() {
+
+    document.getElementById("CheckBoxExampleAppleValue").innerHTML = "";
+    document.getElementById("CheckboxExamplePearValue").innerHTML = "";
+    document.getElementById("CheckBoxExampleBananaValue").innerHTML =  "";
+
+    if (document.getElementById("ckApple").checked) {
+        document.getElementById("CheckBoxExampleAppleValue").innerHTML = 
+            document.getElementById("ckApple").value;
+    }
+    if (document.getElementById("ckPear").checked) {
+        document.getElementById("CheckboxExamplePearValue").innerHTML = 
+            document.getElementById("ckPear").value;
+    }
+    if (document.getElementById("ckBanana").checked) {
+        document.getElementById("CheckBoxExampleBananaValue").innerHTML = 
+            document.getElementById("ckBanana").value;
+    }
+}
+&lt;/script&gt;
+</pre>
+            <input type="submit" value="CheckboxExample" name="CheckboxButton" onclick="CheckboxExample()">
+            <label>Fruits: </label>
+            <label for="ckApple"><input type="checkbox" name="ckfruit1" id="ckApple" value="Apple">Red Apple</label>
+            <label for="ckPear"><input type="checkbox" name="ckfruit2" id="ckPear" value="Pear">Green Pear</label>
+            <label for="ckBanana"><input type="checkbox" name="ckfruit3" id="ckBanana" value="Banana">Yellow Banana</label>
+            <span id="CheckBoxExampleAppleValue"></span>
+            <span id="CheckboxExamplePearValue"></span>
+            <span id="CheckBoxExampleBananaValue"></span>
+            <script>
+            function CheckboxExample() {
+                
+                document.getElementById("CheckBoxExampleAppleValue").innerHTML = "";
+                document.getElementById("CheckboxExamplePearValue").innerHTML = "";
+                document.getElementById("CheckBoxExampleBananaValue").innerHTML =  "";
+                        
+                if (document.getElementById("ckApple").checked) {
+                    document.getElementById("CheckBoxExampleAppleValue").innerHTML = document.getElementById("ckApple").value;
+                }
+                if (document.getElementById("ckPear").checked) {
+                    document.getElementById("CheckboxExamplePearValue").innerHTML = document.getElementById("ckPear").value;
+                }
+                if (document.getElementById("ckBanana").checked) {
+                    document.getElementById("CheckBoxExampleBananaValue").innerHTML = document.getElementById("ckBanana").value;
+                }
+            }
+            </script>
+            <hr>
+            </div>
+            </div>
+            
+            
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>If..Then..Else Example</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li><a href="/assets/ITEC3650/minmaxavg/index.html">Minimum, Maximum, and Average with Validation</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="well">
+                <p><strong>Assignment - Due February 15 - </strong> Create a new project called <strong>Calculator</strong>.  As closely as possible, create the web form shown the image below in your  workspace.  When complete, you should be a calculator that let's you add, subrtract, multiply, and divide two numbers.  The operands are required and should be numeric floating point.  Display error messages as appropriate.  The clear button should clear all inputs, error messages and results.  Hint: Make a copy of the MinMaxAvg project and get it to work in your workspace, then modify it for this assignment.</p>
+                <button id="btnCalculator">Click to view figure</button><br>
+                <div id="Calculator" class="text-block text-center" style="display: none">
+                    <br>
+                    <figure class="figure">
+                    <br>
+                    <img class="figure-img img-fluid rounded img-thumbnail" src="/img/ITEC/calculator.JPG">
+                        <figcaption class="figure-caption h3"><strong>Javascript Calculator</strong></figcaption>
+                    </figure>
+                </div>
+            </div>    
+        </div>  <!-- End Lecture Body -->
+    </div>  <!-- End Lecture Panel -->
+    <hr>
+</div>  <!-- End Day -->
+
+<!-- Day 6 Lecture Start -->
+<div id="SP2026ITEC3650Day6">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>February 6, 2025</h3>
+        </div>
+        <div class="panel-body">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Programming Lab</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li>Work on Calculator Assignment</li>
+                    </ul>
+                </div>
+            </div>
+        </div>  <!-- End Lecture Body -->
+    </div>  <!-- End Lecture Panel -->
+    <hr>
+</div>  <!-- End Day -->
+
+<!-- Day 8 Lecture Start -->
+<!--
+<div id="SP2026ITEC3650Day8">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>February 14, 2020</h3>
+        </div>
+        <div class="panel-body">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                <h4><strong>Browser Object Model (BOM)</strong></h4>
+            </div>
+            <div class="panel-body">
+                <ul>
+                    <li><a href="https://www.w3schools.com/js/js_window.asp">JS Window</a></li>
+                    <li><a href="https://www.w3schools.com/js/js_window_screen.asp">JS Screen</a></li>
+                    <li><a href="https://www.w3schools.com/js/js_window_location.asp">JS Location</a></li>
+                    <li><a href="https://www.w3schools.com/js/js_window_history.asp">JS History</a></li>
+                    <li><a href="https://www.w3schools.com/js/js_window_navigator.asp">JS Navigator</a></li>
+                    <li><a href="https://www.w3schools.com/js/js_popup.asp">JS Popup Alert</a></li>
+                    <li><a href="https://www.w3schools.com/js/js_timing.asp">JS Timing</a></li>
+                    <li><a href="https://www.w3schools.com/js/js_cookies.asp">JS Cookies</a></li>
+                    <li><a href="https://www.w3schools.com/html/html5_geolocation.asp">Geolocation</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Strings</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li><a href="https://www.w3schools.com/js/js_strings.asp">JS Strings</a></li>
+                        <li><a href="https://www.w3schools.com/js/js_string_methods.asp">JS String Methods</a></li>
+                        <li><a href="https://www.w3schools.com/jsref/jsref_obj_string.asp">JS String Reference</a></li>
+                        <li><a href="https://www.w3schools.com/js/js_regexp.asp">JS RegExp</a></li>
+                        <li><a href="https://www.w3schools.com/jsref/jsref_obj_regexp.asp">JS RegExp Reference</a></li>
+                    </ul>
+                    <h4>String Examples</h4>
+                    <ul>
+                        <li><a href="/assets/ITEC3650/characterprocessing/CharacterProcessing.html">Character Processing</a></li>
+                        <li><a href="/assets/ITEC3650/searchingstrings/SearchingStrings.html">Searching Strings</a></li>
+                        <li><a href="/assets/ITEC3650/splitandsubstring/SplitAndSubString.html">Split and Substring</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Numbers</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li><a href="https://www.w3schools.com/js/js_numbers.asp">JS Numbers</a></li>
+                        <li><a href="https://www.w3schools.com/js/js_number_methods.asp">JS Number Methods</a></li>
+                        <li><a href="https://www.w3schools.com/js/js_math.asp">JS Math</a></li>
+                        <li><a href="https://www.w3schools.com/jsref/jsref_obj_math.asp">JS Math Reference</a></li>
+                        <li><a href="https://www.w3schools.com/jsref/jsref_obj_number.asp">JS Number Reference</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Dates</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li><a href="https://www.w3schools.com/js/js_dates.asp">JS Dates</a></li>
+                        <li><a href="https://www.w3schools.com/js/js_date_formats.asp">JS Date Formats</a></li>
+                        <li><a href="https://www.w3schools.com/js/js_date_methods.asp">JS Date Methods</a></li>
+                        <li><a href="https://www.w3schools.com/jsref/jsref_obj_date.asp">JS Date Reference</a></li>
+                    </ul>
+                    <h4>Date and Time Examples</h4>
+                    <ul>
+                        <li><a href="https://www.the-art-of-web.com/javascript/validate-date/">Validating Date and Time</a></li>
+                        <li><a href="/assets/ITEC3650/datetime/DateTime.html">Date and Time</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Booleans</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li><a href="https://www.w3schools.com/js/js_booleans.asp">JS Booleans</a></li>
+                        <li><a href="https://www.w3schools.com/jsref/jsref_obj_boolean.asp">JS Boolean Reference</a></li>
+                    </ul>
+                </div>
+            </div>-->
+<!--        </div>-->  <!-- End Lecture Body -->
+<!--    </div>-->  <!-- End Lecture Panel -->
+<!--    <hr>-->
+<!--</div>-->  <!-- End Day -->
+
+<!-- Day 7 Lecture Start -->
+<div id="SP2026ITEC3650Day7">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>February 11, 2025</h3>
+        </div>
+        <div class="panel-body">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                <h4><strong>JQuery</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+
+                        <li><a href="https://www.w3schools.com/jquery/default.asp">jQuery HOME</a></li>
+                        <li><a href="https://www.w3schools.com/jquery/jquery_intro.asp">jQuery Intro</a></li>
+                        <li><a href="https://www.w3schools.com/jquery/jquery_get_started.asp">jQuery Getting Started</a></li>
+                        <li><a href="https://www.w3schools.com/jquery/jquery_syntax.asp">jQuery Syntax</a></li>
+                        <li><a href="https://www.w3schools.com/jquery/jquery_selectors.asp">jQuery Selectors</a>
+                        <li><a href="https://www.w3schools.com/jquery/jquery_events.asp">jQuery Events</a></li>
+
+                        <li><a href="https://www.w3schools.com/jquery/jquery_hide_show.asp">jQuery Hide/Show</a></li>
+                        <li><a href="https://www.w3schools.com/jquery/jquery_fade.asp">jQuery Fade</a></li>
+                        <li><a href="https://www.w3schools.com/jquery/jquery_slide.asp">jQuery Slide</a></li>
+                        <li><a href="https://www.w3schools.com/jquery/jquery_animate.asp">jQuery Animate</a></li>
+<!--                    <li><a href="https://www.w3schools.com/jquery/jquery_stop.asp">jQuery stop()</a></li>
+                        <li><a href="https://www.w3schools.com/jquery/jquery_callback.asp">jQuery Callback</a></li>
+-->
+                        <li><a href="https://www.w3schools.com/jquery/jquery_chaining.asp">jQuery Chaining</a></li>
+<!--
+                        <li><a href="https://www.w3schools.com/jquery/jquery_dom_get.asp">jQuery Get</a></li>
+                        <li><a href="https://www.w3schools.com/jquery/jquery_dom_set.asp">jQuery Set</a></li>
+-->
+                        <li><a href="https://www.w3schools.com/jquery/jquery_dom_add.asp">jQuery Add</a></li>
+                        <li><a href="https://www.w3schools.com/jquery/jquery_dom_remove.asp">jQuery Remove</a></li>
+                        <li><a href="https://www.w3schools.com/jquery/jquery_css_classes.asp">jQuery CSS Classes</a></li>
+                        <li><a href="https://www.w3schools.com/jquery/jquery_css.asp">jQuery css()</a></li>
+                        <li><a href="https://www.w3schools.com/jquery/jquery_dimensions.asp">jQuery Dimensions</a></li>
+                    </ul>
+                    <h4>JQuery Resources</h4>
+                    <ul>
+                        <li><a href="https://jquery.com">JQuery Home Page</a></li>
+                        <li><a href="https://jqueryui.com">JQuery User Interface</a></li>
+                        <!-- <li><a href="/courses/SP2016/IFSC3300/jquery-tabs.html">JQuery Tabs</a></li>
+                        <li><a href="/courses/SP2016/IFSC3300/jquery-cycle.html">JQuery Cycle</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>  <!-- End Lecture Body -->
+    </div>  <!-- End Lecture Panel -->
+    <hr>
+</div>  <!-- End Day -->
+
+<!-- Day 8 Lecture Start -->
+<div id="SP2026ITEC3650Day8">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>February 13, 2025</h3>
+        </div>
+        <div class="panel-body">
+            <!-- Windows Section Start -->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Asynchronous JavaScript and XML (AJAX)</strong></h4>
+                </div>
+                <div class="panel-body">
+
+                    <ul>
+                       <li><a href="https://www.w3schools.com/js/js_ajax_intro.asp">Introduction to AJAX</a></li>
+                       <li><a href="https://www.w3schools.com/js/js_api_fetch.asp">JavaScript Fetch API</a></li>
+                    </ul>
+<!--
+                    <div class="well">
+<pre>
+/* URL for AJAX Call */
+var myURL = "http://ajaxurl.php?P1=parameter1&P2=parameter2";
+
+/* AJAX Method (POST or GET) */
+var myMethod = "GET";
+
+/* Make sure the document is ready */
+$(document).ready(function() { 
+
+    /* Perform AJAX call - Note that the AJAX function 
+       does not have a selector */
+
+    $.ajax({
+      method: myMethod,
+      url: myURL
+    })
+
+    /* AJAX complete - result is in msg */
+      .done(function( msg ) {
+
+            /* Your code to process the result goes here - 
+               display the returned message */          
+            document.getElementById("ajaxresult").innerHTML = msg;
+    });
+});</pre>
+                    </div>
+
+
+                    
+                    
+                    <ul>
+                        <li>Making an AJAX call using JQuery using POST:</li>
+                    </ul>
+                    <div class="well">
+<pre>
+/* URL for AJAX Call */
+var myURL = "http://ajaxurl.php";
+
+/* AJAX Method (POST or GET) */
+var myMethod = "POST";
+
+/* Object containing the data sent to the AJAX page. 
+   The properites of the object must EXACTLY match 
+   the requirements of the AJAX page */
+   
+var myData = {};
+myData.P1 = parmeter1;
+myData.P2 = parmeter2;
+
+/* Make sure the document is ready */
+$(document).ready(function() { 
+
+    /* Perform AJAX call - Note that the AJAX function 
+       does not have a selector */
+
+    $.ajax({
+      method: myMethod,
+      data: myData,
+      url: myURL
+    })
+
+    /* AJAX complete - result is in msg */
+      .done(function( msg ) {
+
+            /* Your code to process the result goes here - 
+               display the returned message */          
+            document.getElementById("ajaxresult").innerHTML = msg;
+    });
+});</pre>
+                    </div>
+
+-->                
+                
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>AJAX Examples</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li>URL: http://brucebauer.info/assets/ITEC3650/gethint.php</li>
+                        <li>Parameters:
+                            <ul>
+                                <li>Name: Partial name to lookup</li>
+                                <li>Invoking gethint.php: <a href="/assets/ITEC3650/gethint.php?Name=E">https://brucebauer.info/assets/ITEC3650/gethint.php?Name=E</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/assets/ITEC3650/fetchhints.html">Example of using gethint.php</a></li>
+                        <li><a href="/assets/ITEC3650/fetchajaxcalculator/index.html">Another AJAX Example - AJAX Javascript Calculator</a></li>
+                    </ul>
+                    <div class="well">
+                        <p><strong>Assignment - Due February 20 at midnight - </strong> Create a new project called <strong>unitsconversion</strong>.  Create <strong>index.html</strong>, and an <strong>assets</strong>, <strong>script</strong>, and <strong>style</strong> subfolders.  As closely as possible, create the web form using the image below.  When complete, you should prompt for a numeric value, the value's units (call "FromUnits") and the units to convert the value to (called "ToUnits").  When the calculate button is pressed you will make an AJAX call to a webpage that will do the conversions for you. The value is required and should be numeric.  The FromUnit and ToUnit are required.  Display error messages as appropriate.  The clear button shold clear all inputs, error messages and results.</p>
+                        <ul>
+                            <li><strong>URL </strong> - https://brucebauer.info/assets/ITEC3650/unitsconversion.php</li>
+                            <li><strong>FromValue</strong> - The number to be converted</li>
+                            <li><strong>FromUnit</strong> - The unit of the FromValue, must be one of the following:
+                                <ul>
+                                    <li>cm - centimenters</li>
+                                    <li>m  - meters</li>
+                                    <li>km - kilometers</li>
+                                    <li>in - inches</li>
+                                    <li>ft - feet</li>
+                                    <li>yd - yards</li>
+                                    <li>mi - miles</li>
+                                </ul>
+                            </li>
+                            <li><strong>ToUnit</strong> - The unit that you want to convert the FromValue to, must be one of the following:
+                                <ul>
+                                    <li>cm - centimenters</li>
+                                    <li>m  - meters</li>
+                                    <li>km - kilometers</li>
+                                    <li>in - inches</li>
+                                    <li>ft - feet</li>
+                                    <li>yd - yards</li>
+                                    <li>mi - miles</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p>To see the operation of the webpage, try: <a href="https://brucebauer.info/assets/ITEC3650/unitsconversion.php?FromValue=10&FromUnit=cm&ToUnit=in">Example of Calculation - Converts 10 cm to in (3.937007874 in)</a></p>
+                        
+                    <button id="btnUnitConversion">Click to view figure</button><br>
+                    <div id="UnitConversion" class="text-block text-center" style="display: none">
+                        <br>
+                        <figure class="figure">
+                        <br>
+                        <img class="figure-img img-fluid rounded img-thumbnail" src="/img/ITEC/unitconversion.JPG">
+                            <figcaption class="figure-caption h3"><strong>Unit Conversion</strong></figcaption>
+                        </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  <!-- End Lecture Body -->
+    </div>  <!-- End Lecture Panel -->
+    <hr>
+</div>  <!-- End Day -->
+
+<!-- Day 9 Lecture Start -->
+<div id="SP2026ITEC3650Day9">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>February 18, 2025</h3>
+        </div>
+        <div class="panel-body">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Programming Lab</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li>Work on AJAX Assignment</li>
+                    </ul>
+                </div>
+            </div>
+        </div>  <!-- End Lecture Body -->
+    </div>  <!-- End Lecture Panel -->
+    <hr>
+</div>  <!-- End Day -->
+
+<!-- Day 10 Lecture Start -->
+<div id="SP2026ITEC3650Day10">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>February 20, 2025</h3>
+        </div>
+        <div class="panel-body">
+<!--
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Representational State Transfer (REST)</strong></h4>
+
+                </div>
+                <div class="panel-body">
+                    <p><strong>Using an API</strong></p>
+                    <p>API's (Application Programming Interface) is a documentation about the way in which you can access and manipulate data.  While there is no set rules, many interfaces are beginning to standardize on REST and JSON.</p>
+                    <p><strong>JSON</strong></p>
+                    <p>JSON (JavaScript Object Notation) is a typical standard used to exchange data between a browser and a server. The data is returned as <a href="https://www.w3schools.com/js/js_json_syntax.asp">JSON string</a>.  Once we have a JSON String, we can convert it to a JSON object using <a href="https://www.w3schools.com/js/js_json_parse.asp">JSON Parse</a></p>
+                    <p><strong>REST</strong></p>
+                    <p><a href="https://en.wikipedia.org/wiki/Representational_state_transfer">REST</a> (Representational State Transfer) provides a standardized way to manipulate a database using URL's:</p>
+                    <ul>
+                        <li>Return all rows in a table: Method="GET" - /tablename - returns a JSON Object</li>
+                        <li>Return a specific row in a table: Method="GET" - /tablename/PKID - returns a JSON Object</li>
+                        <li>Insert a row into a table: Method="POST" - /tablename, JSON object containing data</li>
+                        <li>Update a row in a table: Method="PUT" - /tablename/PKID, JSON object containing data</li>
+                        <li>Delete a row in a table: Method="DELETE" - /tablename/PKID</li>
+                        <li>See <a href="https://github.com/mevdschee/php-crud-api">https://github.com/mevdschee/php-crud-api</a> and <a href="http://restfulwebapis.org/restful_web_services.pdf">Book about REST Services</a> for more documentation</li>
+                    </ul>
+                    <p><strong>Installing a REST/JSON Example</strong></p>
+                    <ul>
+                        <li>Log into Cloud 9.  Make sure that a web server is running and is serving your root folder.</li>
+                        <li>Open phpmyadmin.  When you are logging in, record the URL of the login page minus the "/phpmyadmin".  That is the base URL of your web server.</li>
+                        <li>Create a new database called <strong>"PatientDB"</strong> (Note the case of the name).</li>
+                        <li>Within the PatientDB, create a table called <strong>"patient"</strong> (Note the case of the name).  Add the following columns:        <ul>
+                                <li>PKID - integer, auto-increment, primary index</li>
+                                <li>FirstName - varchar (30)</li>
+                                <li>LastName - varchar (30)</li>
+                            </ul>
+                        </li>
+                        <li>Manually add your name to the <strong>Patients</strong> table.</li>
+                        <li>In your Cloud 9 Workspace and in the <strong>ITEC3650</strong> folder, create a subfolder called <strong>"patient"</strong>.  Within that folder create the subfolders <strong>"assets"</strong>, then <strong>"style"</strong> and <strong>"scripts"</strong></li>
+                        <li>Right click <a href="/assets/ITEC3650/newpatientstarter/index.html">index.html</a>, save it, and upload it in the <strong>"patients"</strong> folder</li>
+                        <li>Right click <a href="/assets/ITEC3650/newpatientstarter/restapi.phpx">restapi.phpx</a>, save it, and upload it in the <strong>"patients"</strong> folder. Rename the file to restapi.php</li>
+                        <li>Right click <a href="/assets/ITEC3650/newpatientstarter/assets/style/patient.css">patient.css</a>, save it, and upload it in the <strong>"style"</strong> folder</li>
+                        <li>Right click <a href="/assets/ITEC3650/newpatientstarter/assets/scripts/patient.js">patient.js</a>, save it, and upload it in the <strong>"scripts"</strong> folder</li>
+                        <li>Edit restapi.php and locate the following code at the bottom:</li>
+                    </ul>
+<pre>
+$api = new PHP_CRUD_API(array(
+ 	'dbengine'=>'MySQL',
+ 	'hostname'=>'127.0.0.1',
+ 	'username'=>'blbauer',
+ 	'password'=>'',
+ 	'database'=>'PatientDB',
+ 	'charset'=>'utf8'
+ ));
+ $api->executeCommand();
+</pre>
+                    <ul>
+                        <li>Change the username to your database username and change the database to "PatientDB" database.  Both of these parameter are case sensitive.</li>
+                        <li>You can test restapi by navigating to: <a href="https://itecemerald-blbauer.c9users.io/ITEC3650/patient/restapi.php/patient/">https://itecemerald-blbauer.c9users.io/ITEC3650/patient/restapi.php/patient/</a> (substitute your Cloud 9 URL for "https://itecemerald-blbauer.c9users.io").  You should see a JSON dump of Record 1</li>
+                        <li>Edit patient.js and locate the line of code <code>var myURL= "https://itecemerald-blbauer.c9users.io/ITEC3650/patient/restapi.php/patient/"</code>.  Change "https://itecemerald-blbauer.c9users.io" to the URL of your web space.</li>
+                    </ul>
+                    <div class="well">
+                        <strong>Assignment (Due March 7 at midnight)</strong> - using the web form that you created for the January 24 assignment, one by one, add the fields from your web form, the corresponding field to the <strong>"patient"</strong> data table, and parameter to the AJAX call.  Test each field one by one.  Don't add all of the fields to the form at once, else you will have to enter data into the entire form each time you test.  Hint: For the Birthday, use the &lt;input type="date"&gt; HTML element.  This will return a date in ISO format (YYYY-MM-DD) format, which is what the datbase expects.
+                    </div>
+                </div>
+            </div>
+-->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Arrays and Loops</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li><a href="https://www.w3schools.com/js/js_arrays.asp">JavaScript Arrays</a></li>
+                        <li><a href="https://www.w3schools.com/js/js_array_methods.asp">JavaScript Array Methods</a></li>
+                        <li><a href="https://www.w3schools.com/js/js_array_sort.asp">JavaScript Sorting Arrays</a></li>
+                        <li><a href="https://www.w3schools.com/js/js_loop_for.asp">JavaScript For Loop</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>JSON - Javascript Object Notation</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li><a href="https://www.w3schools.com/js/js_json_intro.asp">JSON Introduction</a></li>
+                        <li><a href="https://www.w3schools.com/js/js_json_syntax.asp">JSON Syntax</a></li>
+                        <li><a href="https://www.w3schools.com/js/js_json_arrays.asp">JSON Arrays</a></li>
+                        <li><a href="https://www.w3schools.com/js/js_json_objects.asp">JSON Objects</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>JSON Example - Polygon.io Stock Data</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                    <li><a href="https://www.polygon.io">Polygon.io</a> - Click on "Documentation", "Market Data", "Ticker Details"</li>
+                    <li><a href="/assets/ITEC3650/fetchPolygonTickerDetails/index.html">Example of using Polygon.io to Retrieve Ticker Details</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>  <!-- End Lecture Body -->
+    </div>  <!-- End Lecture Panel -->
+    <hr>
+</div>  <!-- End Day -->
+
+<!-- Day 11 Lecture Start -->
+<div id="SP2026ITEC3650Day11">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>February 25, 2025</h3>
+        </div>
+        <div class="panel-body">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>JSON Example - Polygon.io Stock Data</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li><a href="https://www.polygon.io">Polygon.io</a> - Click on "Documentation", "Market Data", "Ticker Details" and "Aggregates (Bars)"</li>
+                        <li><a href="/assets/ITEC3650/fetchPolygonTickerCharts/index.html">Example of using Polygon.io Stock Data to Retrieve Stock Data and Charts</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Chart.js</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li><a href="https://www.w3schools.com/js/js_graphics_chartjs.asp">W3Schools Examples</a></li>
+                        <li><a href="https://chartjs.org">ChartJS.org</a></li>
+                    </ul>
+                <p>Here is the simplest code to chart dates and values:</p>
+<pre>
+var ctx = document.getElementById("chartjs-0");
+
+var myChart = new Chart(ctx, {
+    "type":"line",
+    "data": {
+        "labels": dates,
+        "datasets":[{
+            "data": values,
+            fill: false
+        }]
+    },
+    "options":{ 
+        responsive: false,
+        maintainAspectRatio: true,
+    }
+});
+</pre>
+                </div>
+            </div>
+            <div class="well">
+                <p><strong>Assignment - Due March 7 - </strong> Review the documentation for Currency Value Conversion, known as FOREX, located at <a href="https://polygon.io/docs/forex/getting-started">https://polygon.io/docs/forex/getting-started</a>. You will need to signup for an api token.  You can see all the currency symbols at <a href="https://eoddata.com/stocklist/FOREX.htm">http://eoddata.com/stocklist/FOREX.htm</a>.</p>
+                <p>Create a project called <strong>Currency Value History</strong>.  As closely as possible, create the web form using the images below.  Your application should let the user select at least 5 currencies (including US Dollars) to convert from and to.  You should also prompt for from and to dates. The application should construct a URL and make an AJAX call to the Polygon.io Forex data.  You should use <strong>chart.js</strong> to graph the data.  All of the input data is required. Display error messages as appropriate.  The clear button should clear all inputs, error messages and results.</p>
+                    
+                <button id="btnCurrencyValueHistory1">Click to view figure</button><br>
+                <div id="CurrencyValueHistory1" class="text-block text-center" style="display: none">
+                    <br>
+                    <figure class="figure">
+                    <br>
+                    <img class="figure-img img-fluid rounded img-thumbnail" src="/img/ITEC/CurrencyValueHistory1.JPG">
+                        <figcaption class="figure-caption h3"><strong>Currency Value History</strong></figcaption>
+                    </figure>
+                </div>
+                <br>
+                <button id="btnCurrencyValueHistory2">Click to view figure</button><br>
+                <div id="CurrencyValueHistory2" class="text-block text-center" style="display: none">
+                    <br>
+                    <figure class="figure">
+                    <br>
+                    <img class="figure-img img-fluid rounded img-thumbnail" src="/img/ITEC/CurrencyValueHistory2.JPG">
+                        <figcaption class="figure-caption h3"><strong>Currency Value History</strong></figcaption>
+                    </figure>
+                </div>
+            </div>    
+        </div>  <!-- End Lecture Body -->
+    </div>  <!-- End Lecture Panel -->
+    <hr>
+</div>  <!-- End Day -->
+
+<!-- Day 12 Lecture Start -->
+<div id="SP2026ITEC3650Day12">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>February 27, 2025</h3>
+        </div>
+        <div class="panel-body">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Programming Lab</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li>Work on Currency Value Conversion Assignment</li>
+                    </ul>
+                </div>
+            </div>
+        </div>  <!-- End Lecture Body -->
+    </div>  <!-- End Lecture Panel -->
+    <hr>
+</div>  <!-- End Day -->
+                
+<!-- Day 13 Lecture Start -->
+<div id="SP2026ITEC3650Day13">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>March 4, 2025</h3>
+        </div>
+        <div class="panel-body">
+            <!-- Windows Section Start -->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>JavaScript Technical Assessment - Location Temperature</strong></h4>
+                </div>
+                <div class="panel-body">
+            <div class="well">
+                <p><strong>Assignment - Due March 20 - </strong> In your project, add a temperature forcast for the location of your state park or business.  Review the documentation for temperature forecasts located at <a href="https://open-meteo.com/">https://open-meteo.com/</a>. You will not need to apply for an API Key.</p>
+                <p>Your webpage should perform the following:
+                <ul>
+                    <li>Prompt the user for a location
+                        <ul>
+                            <li>The location is required.  You should put up an error message if the location is blank.</li>
+                            <li>You can default the location to the location of your state park or business, but the user should be able to enter any location.</li>
+                        </ul>
+                    </li>
+                    <li>Using the location and geocoding API in open-meteo, lookup the location.  Open-meteo returns the 10 best matches; simply use the first match.  Display an error message there is no match. Display the following data:
+                        <ul>
+                            <li>Name</li>
+                            <li>Admin1 location</li>
+                            <li>Country</li>
+                            <li>Latitude</li>
+                            <li>Longitude</li>
+                        </ul>
+                    </li>
+                    <li>Now that you have the latitude and longitude, lookup the temperature forecast in open-meteo.  Use the temperature that is 2 meter above ground level and return the values in fahrenheit degrees.  The date/time values are in YYYY-MM-DDTHH:MM format.  You can use the following code snippet to convert to a more friendly date format:</li>
+<pre>// Convert date to unix milliseconds
+let unixmillsec = Date.parse(msg2.hourly.time[i]);
+// Create temporary date variable 
+let tmpdate = new Date(unixmillsec);
+// Extract the date/time string for a more friendly format
+tempdate[i] = tmpdate.toLocaleString();</pre>
+                    <li>Display the temperature forecast as a table.</li>
+                    <li>Display the temperature forecast as a line chart.</li>
+                </ul>
+                    You can see an unstyled example in 
+                <a href="../../../assets/ITEC3650/localweather.pdf">localweather.pdf</a>. Style your webpage so that it matches the rest of your site.  Also, you will show all the data fora 7 day forecast.
+            </div>    
+<!--
+                <div class="well">
+                       <p><strong>JavaScript Technical Assessment - Restaurant Survey - Due March 14 at midnight</strong></p>
+                        <ul>
+                            <li>This is not a group project -  This is an individual assignment</li>
+                            <li>You may use any materials we have covered.  You may also ask the instructor for technical help.</li>
+                            <li><strong>Webpage</strong>
+                                <ul>
+                                    <li>In your Cloud 9 website, create a "survey" folder in the root of your website.</li>
+                                    <li>Put your webpage, assets and css in the appropriate folders.</li>
+                                    <li>You must style your form using an exteral CSS stylesheet.   The style can be simple, but it must work. Here is an <a href="final.pdf">unformatted</a> example.</li>-->
+                                    <!--<li>You can use this <a href="finalstarter.html">Final Starter File</a> to as your index.html page.-->
+                                        <!--should be similar to this <a href="https://www.jotform.com/form-templates/restaurant-evaluation-survey">Survey Form</a>.</li>-->
+    <!--                                <li>Copy the restapi.php page from your PatientDB application to this folder.  Change the database name to "Survey".</li>
+                                    <li>All fields should be validated.</li>
+                                    <li>The form should store an entry in the "survey" table (see below) using the REST API.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Database</strong>
+                                <ol>
+                                    <li>Create a database called "Survey"</li>
+                                    <li>Create a table called "survey" and add the following columns:
+                                        <ul>
+                                            <li>PKID - Integer - Autoincrement, Primary Key</li>
+                                            <li>SurveyDate - timestamp - current timestamp</li>
+                                            <li>DateVisited - date - Required</li>
+                                            <li>DineInTakeOut - Char(1) - Required, "D" or "T"</li>
+                                            <li>FoodQuality - Integer - 4=Excellent, 3=Good, 2=Average, 1=Dissatisfied</li>
+                                            <li>ServiceQuality - Integer - 4=Excellent, 3=Good, 2=Average, 1=Dissatisfied</li>
+                                            <li>OrderAccuracy - Integer - 4=Excellent, 3=Good, 2=Average, 1=Dissatisfied</li>
+                                            <li>SpeedOfService - Integer - 4=Excellent, 3=Good, 2=Average, 1=Dissatisfied</li>
+                                            <li>Value - Integer - 4=Excellent, 3=Good, 2=Average, 1=Dissatisfied</li>
+                                            <li>OverallExperience - Integer - 4=Excellent, 3=Good, 2=Average, 1=Dissatisfied</li>
+                                            <li>Comments - Char(200)</li>
+                                            <li>Name - Char(40)</li> 
+                                            <li>Age - Char(6) - "&lt;13", "13-17", "18-24", "25-34", "35-44", "45-54", "&gt;54" </li>
+                                            <li>Email - Char(40)</li>
+                                        </ul>
+                                    </li>
+                                    <li>Note: DateVisited will normally be entered in the form of MM/DD/YYYY, but the database requires a date to be in the format of YYYY-MM-DD. You can use the &lt;input type="DATE"&gt; for input.  This will let you enter a value of MM/DD/YYYY but has a value of YYYY-MM-DD.</li>
+                                </ol>
+                            </li>
+                        </ul>-->
+<!--                        Hints for using radio buttons
+<pre><code>
+&lt;div id="rates"&gt;
+  &lt;input type="radio" id="r1" name="Rate" value="Fixed Rate"&gt; Fixed Rate
+  &lt;input type="radio" id="r2" name="Rate" value="Variable Rate"&gt; Variable Rate
+  &lt;input type="radio" id="r3" name="Rate" value="Multi Rate"&gt; Multi Rate
+  &lt;span class="error id="RateError"&gt;&lt;/span&gt;
+&lt;/div&gt;
+
+Javascript to ensure that a button was selected
+
+function validateRate() {
+    var value = "";
+    /* Check each radio button and see if one is checked */
+    if (document.getElementById("r1").checked) {
+      value = document.getElementById("r1").value;
+    }
+    if (document.getElementById("r2").checked) {
+      value = document.getElementById("r2").value;
+    }
+    if (document.getElementById("r3").checked) {
+      value = document.getElementById("r3").value;
+    }
+    /* value is blank then no radio button was pressed */
+    if (value.trim() == "" ) {
+            document.getElementById("RateError").innerHTML = "Rate Required";
+            return false;
+    }
+    else
+    {
+        document.getElementById("RateError").innerHTML = "";
+        return true;
+    }
+}
+
+
+Javascirpt to insert value from a radio button into a database
+
+    var myData = {};
+    /* If a radio button is checked, then save the value associated with the button */
+    if (document.getElementById("r1").checked) {
+      myData.Rate = document.getElementById("r1").value;
+    }
+    if (document.getElementById("r2").checked) {
+      myData.Rate = document.getElementById("r2").value;
+    }
+    if (document.getElementById("r3").checked) {
+      myData.Rate = document.getElementById("r3").value;
+    }
+    
+
+</code></pre>
+-->
+<!--                    </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Attending Class Using Blackboard Collaborate Ultra</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li>Monitor your email and ualr.edu to see if the university has closed.</li>
+                        <li>Class will meet at the normal start time of 12:15. You can arrive up to 15 minutes early.</li>
+                        <li>At the beginning of class, sign on to that day's sessions.  All of the instructors will be in that session to give out any assignments and discuss the day's activities.  Class roll with be taken at the this session.</li>
+                        <li>WHEN DIRECTED TO DO SO, you may join your team session for the remainder of the class.  Team sessions do not have an end time and can be used anytime the team wants to meet.</li>
+                        <li>Instructors will join various teams to review the project status.</li>
+                        <li>When the instructors are not with a team, they will be in the instructor's session.  You may join an instructor's session if you have a question.  If the instructor is not there, send the instructor an email that you would like to start a session.</li>
+                        <li>All team members will have full control of the session.  Any team member may present from their screen.</li>
+                        <li>Be sure to mute your microphone when you are not talking.</li>
+                        <li>Raise your hand when you have a question.</li>
+                        <li>Most users do not have 2 screens, which makes it difficult to use chat.  Don't assume that someone is looking at chat.</li>
+                        <li>Using your camera is not required, but it does add to good communication in the session.</li>
+                    </ul>
+                </div>
+            </div>
+                </div>-->
+            </div>   
+        </div>  <!-- End Lecture Body -->
+    </div>  <!-- End Lecture Panel -->
+    <hr>
+</div>  <!-- End Day -->
+
+<!-- Day 14 Lecture Start -->
+<div id="SP2026ITEC3650Day14">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>March 6, 2025</h3>
+        </div>
+        <div class="panel-body">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>JavaScript Technical Assessment - Location Temperature</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li>Continue to work on the Location Temperature page of your project.</li>
+                    </ul>    
+                </div>
+            </div>
+        </div>  <!-- End Lecture Body -->
+    </div>  <!-- End Lecture Panel -->
+    <hr>
+</div>  <!-- End Day -->
+
+<!-- Day 15 Lecture Start -->
+<div id="SP2026ITEC3650Day15">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>March 11, 2025</h3>
+        </div>
+        <div class="panel-body">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>CSTEM Job Fair</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li>Attend the CSTEM Job Fair at the Stephens Center 12pm to 3pm</li>
+                        <li>Click <a href="https://ualr.edu/cstem/career-fair-2/">here</a> to register.</li>
+                    </ul>    
+                </div>
+            </div>
+        </div>  <!-- End Lecture Body -->
+    </div>  <!-- End Lecture Panel -->
+    <hr>
+</div>  <!-- End Day -->
+
+<!-- Day 16 Lecture Start -->
+<div id="SP2026ITEC3650Day16">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>March 13, 2025</h3>
+        </div>
+        <div class="panel-body">
+
+            <!-- Windows Section Start -->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Project Management Overview</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li><a href="https://docs.google.com/presentation/d/e/2PACX-1vSEU-a5cgp6FPk-uK5BbZNgr6NDB8fnERZrGf8oZ3HgrXhax23jy549QUb07y2KaexOQ3_C41eclxP9/pub?start=false&loop=false&delayms=3000">Project Management - A Short Review</a></li>
+                        <!--<li><a href="https://docs.google.com/presentation/d/11Ej0otDmsP43aDHTqKZ68IaluyJsW6l_MRpp3gKJfyU/pub?start=false&loop=false&delayms=3000">Successful Work Groups</a></li>-->
+                    </ul>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Project Documents</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <!--
+                    <p><a href="https://www.brighthubpm.com/">https://www.brighthubpm.com/</a> has several documents useful for small projects:</p>
+                    <ul>
+                        <li><a href="https://images.brighthub.com/media/D6DF94_sample-scope-statement.doc">Sample Scope Statement</a></li>
+                        <li><a href="https://images.brighthub.com/media/13D9A3_project-initiation-checklist.doc">Project Initiation Checklist</a></li>
+                    </ul>
+                    -->
+                
+                    <p><a href="https://www.projectmanagementdocs.com/">ProjectManagementDocs.com</a> provides a excellent set of document templates for managing a large projects.</p>
+                </div>
+            </div>
+            <div class="well">
+                    <strong>Assignment: </strong>In preparation for the meeting with your client, review the following project management documents at <a href="https://www.projectmanagementdocs.com/">ProjectManagementDocs.com</a>:
+                    <ul>
+                        <li>Project Initiation &#8212;&gt; Project Charter (Single Page Version)</li>
+                        <li>Project Initiation &#8212;&gt; Project Charter (Multi-Page Version)</li>
+                    </ul>
+                    When you meet with your client.  Be sure to ask all the questions necessary to complete the document.  After the meeting, create a Project Charter Plan in Google Docs using the Project Charter (Multi-Page Version) as a template, and share it with your team members and instructors.
+            </div>
+        </div>  <!-- End Lecture Body -->
+    </div>  <!-- End Lecture Panel -->
+    <hr>
+</div>  <!-- End Day -->
+        <!--
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4><strong>Project Status</strong></h4>
+            </div>
+            <div class="panel-body">
+                <p><strong>Download the Project Management Plan</strong>, which can be found at:</p>
+                <ul>
+                    <li>ProjectManagementDocs.com &rarr; Project Planning &rarr; Project Managment Plan &rarr; Download Template</li>
+                    <li><a href="https://www.projectmanagementdocs.com/template/Project-Management-Plan.doc">Project Managment Plan (direct download)</a></li>
+                    <li><a href="/assets/ITEC/Project-Management-Plan.doc">Project Managment Plan (locally)</a></li>
+                </ul>
+            </div>
+        </div>
+        -->
+                
+<!-- Day 17 Lecture Start -->
+<div id="SP2026ITEC3650Day17">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>March 18, 2025</h3>
+        </div>
+        <div class="panel-body">
+                        
+            <!-- Windows Section Start -->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Project Management Overview</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li><a href="https://docs.google.com/presentation/d/e/2PACX-1vSEU-a5cgp6FPk-uK5BbZNgr6NDB8fnERZrGf8oZ3HgrXhax23jy549QUb07y2KaexOQ3_C41eclxP9/pub?start=false&loop=false&delayms=3000">Project Management - A Short Review</a></li>
+                        <!--<li><a href="https://docs.google.com/presentation/d/11Ej0otDmsP43aDHTqKZ68IaluyJsW6l_MRpp3gKJfyU/pub?start=false&loop=false&delayms=3000">Successful Work Groups</a></li>-->
+                    </ul>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Project Management - Work Breakdown Structure</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <p><strong>Review the Work Breakdown Structure (WBS)</strong>, which can be found on <a href="https://www.projectmanagementdocs.com/">ProjectManagementDocs.com</a> at:</p>
+                    <ul>
+                        <li>Project Planniing &#8212;&gt; Work Breakdown Structure</li>
+                        <!--
+                        <li>ProjectManagementDocs.com &rarr; Project Planning &rarr; Work Breakdown Structure (WBS) &rarr; Download Template</li>
+                        <li><a href="https://www.projectmanagementdocs.com/template/Work-Breakdown-Structure.doc">Work Breakdown Structure (WBS) (direct download)</a></li>
+                        <li><a href="/assets/ITEC/Work-Breakdown-Structure.doc">Work Breakdown Structure (WBS) (locally)</a></li>
+                        -->
+                    </ul>
+                    <p><strong>Example Project Management Documents</strong></p>
+                    <ul>
+                        <li><a href="/assets/ITEC4610/project-initiation-checklist.doc">Project Inititiation Checklist</a></li>
+                        <li><a href="/assets/ITEC4610/sample-scope-statement.doc">Sample Scope Document</a></li>
+                    </ul>         
+                    <p><strong>Get Started with the WBS</strong></p>
+                    <p>One of the best ways of project planning involves developing a <strong>kanban</strong> (billboard in Japanese) for all of the requirements in the project. Using two colors of post-it notes and a white board to map out what needs to be done, when and by whom. Simple, but effective.</p>
+                    <p>The kanban process should run something like this:</p>
+                    <ol>
+                        <li>Using one color of post-it notes, write down  all the milestones that you need to achieve on the way to the project outcome,  and number them in chronological order. Stick them all down the left hand side  of the board.</li>
+                        <li>For each milestone, identify any others that  need to be achieved first, before that one can be either started or finished  (precursors) and write them on the post-it note for that milestone.</li>
+                        <li>Now on a different color of post-it notes,  identify all the tasks that need to be done to achieve each milestone. Use  common sense to decide what level of granularity you want to work at. For  example, if your overarching project is a recruitment exercise, you&rsquo;ll want to  spell out each step, from preparing job descriptions, through advertising,  sifting, interviewing, carrying out checks, and offering the job. However, for  a much larger project, you might include a task to &lsquo;recruit project  administrator&rsquo;.</li>
+                        <li>For each task, identify which milestones they feed and write the milestone number on the post-it for the task. Write the  feeder tasks on the post-it for each milestone.</li>
+                        <li>Identify how long each task (in person-hours) is going to take and  write it on the task post-it.</li>
+                        <li>Identify what resources you need to achieve each  task, and write it on the post-it.</li>
+                        <li>Take pictures of the post-it notes with your camera, as you will need it for the next session</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Preparing for Your Meeting</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <p>In preparation for the meeting with your client, review the following project management documents at <a href="https://www.projectmanagementdocs.com/">ProjectManagementDocs.com</a>:</p>
+                    <ul>
+                        <li>Project Initiation → Project Charter (Single Page Version)</li>
+                        <li>Project Initiation → Project Charter (Multi-Page Version)</li>
+                        <li>Project Planning → Work Breakdown Structure</li>
+                        <li>Project Planning → Communications Management Plan</li>
+                        <li>Project Planning → Change Management Plan</li>
+                        <li>Project Monitoring and Controlling → Project Status Reporting</li>
+                        <li>Project Closure → Project Transition-Out Plan</li>
+                    </ul>
+                    <p>Review the following materials:</p>
+                    <ul>
+                        <li><a href="https://nusii.com/blog/questions-client-interview/">10 Questions to Ask in Your Next Client Interview</a></li>
+                        <li><a href="http://wanderful-world.com/2015/11/09/client-interview-questions/">6 Client Interview Questions You Should Be Ready and Raring to Answer</a></li>
+                        <li><a href="https://martech.org/100-questions-you-must-ask-when-developing-web-site/">100 Questions You Must Ask When Developing a Website</a></li>
+                        
+                    </ul>
+
+                    
+                    <div class="well">
+                        <strong>Assignment:</strong> Prepare your questions for the client.
+                    </div>    
+                </div>
+            </div>
+        </div>  <!-- End Lecture Body -->
+    </div>  <!-- End Lecture Panel -->
+    <hr>
+</div>  <!-- End Day -->
+
+<!-- Day 18 Lecture Start -->
+<div id="SP2026ITEC3650Day18">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>March 20, 2025</h3>
+        </div>
+        <div class="panel-body">
+                        
+            <!-- Windows Section Start -->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Project Management - Using Trello to Schedule Your Project</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <!-- <a href="https://smartapp.com/AppZoneCentral/GantterFC">Gantter.com</a> -->
+                    <p><a href="https://www.trello.com">www.trello.com</a> is a freemium, web-based ect management tool that allows you to take your Work Breakdown Structure and interactively schedule your project.  All enterprise project management system, including Microsoft Project, Primavera, and others use the same techniques found in Trello.</p>
+                    <h4><strong>Create a Trello Account</strong></h4>
+                    <p>Navigate to <a href="https://www.trello.com">https://www.trello.com</a> and create an account</p>
+                    <h4><strong>Create a Example Project</strong></h4>
+                    <ul>
+                        <li>On the top menu bar on the left, click <strong>Boards</strong>.  Scroll to the bottom of the menu and click <strong>Create New Board</strong></li>
+                        <li>Name your Board<strong>Your Name - Sample Web Project</strong> and select "No Team".  Select a solid color for the background.</li>
+                        <li>On the right of the screen, click <strong>Show Menu</strong> then <strong>More</strong> then <strong>Labels</strong>.  Edit the labels as follows (be sure to put the number):
+                            <ul>
+                                <li>Green Label - 1. Project Initiation</li>
+                                <li>Yellow Label - 2. Project Planning</li>
+                                <li>Salmon Label - 3. Project Development</li>
+                                <li>Red Label - 4. Project Testing</li>
+                                <li>Purple Label - 5. Project Completion</li>
+                            </ul>
+                        </li>
+                        <li>Create the following lists and cards within the list:
+                            <ul>
+                                <li>Project Complete</li>
+                                <li>Web Project in Progress</li>
+                                <li>Project Initiation
+                                <ul>
+                                    <li>Formulate Questions for Customer (label: Project Initiation)</li>
+                                    <li>Meet with Customer (label: Project Initiation)</li>
+                                </ul>
+                                </li>
+                                <li>Project Planning
+                                    <ul>
+                                        <li>Create Work Breakdown Structure (label: Project Planning)</li>
+                                        <li>Create Gantt Charts and Project Schedule (label: Project Planning)</li>
+                                        <li>Create Project Management Plan (label: Project Planning)</li>
+                                    </ul>
+                                </li>
+                                <li>Project Development
+                                    <ul>
+                                        <li>Develop theme for website (label: Project Development)</li>
+                                        <li>Create and optimize imagery (label: Project Development)</li>
+                                        <li>Create navigation for website (label: Project Development)</li>
+                                        <li>Create webpage A (label: Project Development)</li>
+                                        <li>Create webpage B (label: Project Development)</li>
+                                        <li>Create webpage C (label: Project Development)</li>
+                                    </ul>
+                                </li>
+                                <li>Project Testing
+                                    <ul>
+                                        <li>Final website testing (label: Project Testing)</li>
+                                    </ul>
+                                </li>
+                                <li>Project Completion
+                                    <ul>
+                                        <li>Final website demonstration for customer (label: Project Completion)</li>
+                                        <li>Website installation (label: Project Completion)</li>
+                                        <li>Customer acceptance (label: Project Completion)</li>
+                                        <li>Archive Site Materials (label: Project Completion)</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>In the powerups, add the "GoodGantt" gantt chart software</li>
+                        <li>In the middle of the menu bar, turn on GoodGantt.   Drag/widen/narrow each task so that it matches your estimated dates</li>
+                        <li>Add the team members using their email. Assign team members to each task</li>
+                    </ul>
+                </div>
+            </div>
+        </div>  <!-- End Lecture Body -->
+    </div>  <!-- End Lecture Panel -->
+    <hr>
+</div>  <!-- End Day -->
+
+
+<!-- Spring Break Lecture Start -->
+<div id="SP2026ITEC3650SpringBreak1">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>March 25, 2025</h3>
+        </div>
+        <div class="panel-body">
+            <ul>
+                <li>Spring Break - No Class</li>
+            </ul>
+        </div>  <!-- End Lecture Body -->
+    </div>  <!-- End Lecture Panel -->
+    <hr>
+</div>  <!-- End Day -->
+
+<!-- Spring Break Lecture Start -->
+<div id="SP2026ITEC3650SpringBreak2">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>March 27, 2025</h3>
+        </div>
+        <div class="panel-body">
+            <ul>
+                <li>Spring Break - No Class</li>
+            </ul>
+        </div>  <!-- End Lecture Body -->
+    </div>  <!-- End Lecture Panel -->
+    <hr>
+</div>  <!-- End Day -->
+                
+                
+
+<!-- Day 19 Lecture Start -->
+<div id="SP2026ITEC3650Day19">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>April 1, 2025</h3>
+        </div>
+        <div class="panel-body">
+                        
+            <!-- Windows Section Start -->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Student Project</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li>Inteview with Client</li>
+                    </ul>
+                </div>
+            </div>
+        </div>  <!-- End Lecture Body -->
+    </div>  <!-- End Lecture Panel -->
+    <hr>
+</div>  <!-- End Day -->
+
+<!-- Day 20 Lecture Start -->
+<div id="SP2026ITEC3650Day20">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>April 3, 2025</h3>
+        </div>
+        <div class="panel-body">
+                        
+            <!-- Windows Section Start -->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>River Gauge Data - Site ID's</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li>Review <a href="https://waterservices.usgs.gov">https://waterservices.usgs.gov</a>
+                            <ul>
+                                <li>Learn more about Instaneous Value Services</li>
+                                <li>Checkout the "Test The Service" Tool</li>
+                            </ul>
+                        </li>
+                        <li>Review <a href="https://maps.waterdata.usgs.gov/">https://maps.waterdata.usgs.gov/</a></li>
+                    </ul>
+                    <div class="well">
+                        <strong>Assignment - due next class period</strong> - What are the ID's of the sites that are of interest to the client?
+                    </div>
+                
+                </div>
+            </div>
+        </div>  <!-- End Lecture Body -->
+    </div>  <!-- End Lecture Panel -->
+    <hr>
+</div>  <!-- End Day -->
+
+<!-- Day 21 Lecture Start -->
+<div id="SP2026ITEC3650Day21">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>April 8, 2025</h3>
+        </div>
+        <div class="panel-body">
+                        
+            <!-- Windows Section Start -->
+<!--            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Currency Value History and Mars Rover Projects</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li>Currency Value History Project - Due midnight April 16</li>
+                        <li>Mars Rover Project - Due midnight April 23</li>
+                    </ul>
+                </div>
+            </div>
+-->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>River Gauge Data - URL Generator</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li>Major Filters: List of sites</li>
+                        <li>Site or Site Numbers: Site Numbers separated by commas</li>
+                        <li>Output Format: JSON</li>
+                        <li>Indent: checked</li>
+                        <li>Option filter - Date Range - Return all values from a period from now</li>
+                        <li>Period (All Values): P7D</li>
+                        <li>Sites Serving Parameter Codes: Lookup "Gage height, feet" (00065)</li>
+                        <li>Click Generate URL</li>
+                    </ul>
+                    <div class="well">
+                        <strong>Assignment - due next class period</strong>
+                        <ul>
+                            <li>Save the URL generated above</li>
+                            <li>Using the URL above, create a JavaScript file that makes an AJAX call to return the river data in a message.</li>
+                            <li>You will need to demonstrate your program on Thursday</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>  <!-- End Lecture Body -->
+    </div>  <!-- End Lecture Panel -->
+    <hr>
+</div>  <!-- End Day -->
+
+<!-- Day 22 Lecture Start -->
+<div id="SP2026ITEC3650Day22">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>April 10, 2025</h3>
+        </div>
+        <div class="panel-body">
+<!--            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Currency Value History and Mars Rover Projects</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li>Currency Value History Project - Due midnight April 16</li>
+                        <li>Mars Rover Project - Due midnight April 23</li>
+                    </ul>
+                </div>
+            </div>
+-->                        
+            <!-- Windows Section Start -->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Extracting Values and Dates from the River Gauge Data</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li>You should have the following snippet working: <a href="/assets/ITEC3650/fetchRiverURL/index.html">RiverURL</a></li>
+                    </ul>
+<pre>
+In your HTML document, add the following for the chart:
+
+&lt;canvas id="chartjs-0" width="400" height="400"&gt;&lt;/canvas&gt;
+
+
+In your javascript after the msg has been returned from the AJAX call, add the following:
+
+/* Site 1 */
+var dates = [];
+var values = [];
+/* fLen contains the length of the array (number of values) */
+fLen = msg.value.timeSeries[0].values[0].value.length
+for (i = 0; i &lt; fLen; i++) {
+    values[i] = msg.value.timeSeries[0].values[0].value[i].value
+	dates[i] = msg.value.timeSeries[0].values[0].value[i].dateTime
+}
+var sitename = msg.value.timeSeries[0].sourceInfo.siteName
+var sitecode = msg.value.timeSeries[0].sourceInfo.siteCode[0].value
+var siteDescription = msg.value.timeSeries[0].variable.variableDescription
+
+/* Put your code here to display a graph of values and dates for Site 1*/
+
+/* Site 2 */
+var dates = [];
+var values = [];
+/* fLen contains the length of the array (number of values) */
+fLen = msg.value.timeSeries[1].values[0].value.length
+for (i = 0; i &lt; fLen; i++) {
+    values[i] = msg.value.timeSeries[1].values[0].value[i].value
+	dates[i] = msg.value.timeSeries[1].values[0].value[i].dateTime
+}
+var sitename = msg.value.timeSeries[1].sourceInfo.siteName
+var sitecode = msg.value.timeSeries[1].sourceInfo.siteCode[0].value
+var siteDescription = msg.value.timeSeries[1].variable.variableDescription
+
+/* Put your code here to display a graph of values and dates */
+
+/* Continue for Sites 3 and 4 */
+
+</pre>
+                    <div class="well">
+                        <strong>Assignment - due next class period</strong>
+                        <ul>
+                            <li>Copy the above code into your River Gauge Data project.  Add the code to display at least one of the graphs.  I should be able to click the link to run the program.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>  <!-- End Lecture Body -->
+    </div>  <!-- End Lecture Panel -->
+    <hr>
+</div>  <!-- End Day -->
+
+<!-- Day 23 Lecture Start -->
+<div id="SP2026ITEC3650Day23">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>April 15, 2025</h3>
+        </div>
+        <div class="panel-body">
+                        
+<!--            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Currency Value History and Mars Rover Projects</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li>Currency Value History Project - Due midnight April 16</li>
+                        <li>Mars Rover Project - Due midnight April 23</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Windows Section Start -->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Student Project</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <!--<li><a href="/assets/ITEC/RESTDropdown.txt">Example</a> of loading the options in a dropdown box from a database using REST.</li>-->
+                        <li>Work on River Gauge Chart 1</li>
+                    </ul>
+                </div>
+            </div>
+        </div>  <!-- End Lecture Body -->
+    </div>  <!-- End Lecture Panel -->
+    <hr>
+</div>  <!-- End Day -->
+
+<!-- Day 24 Lecture Start -->
+<div id="SP2026ITEC3650Day24">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>April 17, 2025</h3>
+        </div>
+<!--        <div class="panel-body">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Currency Value History and Mars Rover Projects</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li>Currency Value History Project - Due midnight April 16</li>
+                        <li>Mars Rover Project - Due midnight April 23</li>
+                    </ul>
+                </div>
+            </div>
+-->                        
+            <!-- Windows Section Start -->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Student Project</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li>Complete All River Gauge Charts</li>
+                    </ul>
+                </div>
+            </div>
+        </div>  <!-- End Lecture Body -->
+    </div>  <!-- End Lecture Panel -->
+    <hr>
+</div>  <!-- End Day -->
+
+<!-- Day 25 Lecture Start -->
+<div id="SP2026ITEC3650Day25">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>April 22, 2025</h3>
+        </div>
+        <div class="panel-body">
+                        
+<!--            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Currency Value History and Mars Rover Projects</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li>Mars Rover Project - Due midnight April 23</li>
+                    </ul>
+                </div>
+            </div>
+-->
+            <!-- Windows Section Start -->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Student Project</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li>Work on Student Project</li>
+                    </ul>
+                </div>
+            </div>
+        </div>  <!-- End Lecture Body -->
+    </div>  <!-- End Lecture Panel -->
+    <hr>
+</div>  <!-- End Day -->
+
+<!-- Day 26 Lecture Start -->
+<div id="SP2026ITEC3650Day26">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>April 24, 2025</h3>
+        </div>
+        <div class="panel-body">
+                        
+            <!-- Windows Section Start -->
+<!--            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Currency Value History and Mars Rover Projects</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li>Mars Rover Project - Due midnight April 23</li>
+                    </ul>
+                </div>
+            </div>
+-->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Student Project</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li>Work on Student Project</li>
+                    </ul>
+                </div>
+            </div>
+        </div>  <!-- End Lecture Body -->
+    </div>  <!-- End Lecture Panel -->
+    <hr>
+</div>  <!-- End Day -->
+
+<!-- Day 27 Lecture Start -->
+<div id="SP2026ITEC3650Day27">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>April 29, 2025</h3>
+        </div>
+        <div class="panel-body">
+                        
+            <!-- Windows Section Start -->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Student Project</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li>Work on Student Project</li>
+                    </ul>
+                </div>
+            </div>
+        </div>  <!-- End Lecture Body -->
+    </div>  <!-- End Lecture Panel -->
+    <hr>
+</div>  <!-- End Day -->
+
+                
+
+<!-- Day 28 Lecture Start -->
+<div id="SP2026ITEC3650Day28">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>May 1, 2025</h3>
+        </div>
+        <div class="panel-body">
+                        
+            <!-- Windows Section Start -->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Student Project</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li>Project Presentation</li>
+<!--
+                        <li><a href="https://www.surveymonkey.com/r/NDLY28Q">Faculty Survey</a></li>
+                        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSej6HE6OKDsokayOdsQx_3d3gbHyqhr3xPDPWpIZhzjcMA5oA/viewform?usp=sf_link">Peer Review</a></li>
+-->
+                    </ul>
+                </div>
+            </div>
+        </div>  <!-- End Lecture Body -->
+    </div>  <!-- End Lecture Panel -->
+    <hr>
+</div>  <!-- End Day -->
+
+
+                
+            </div> <!-- /.main content col-md-9 -->
+            
+        <div class="col-md-3" id="sidebar" w3-include-html="../../../bootstrap/inc/sidebar.html"></div> <!-- /.sidebar col-md-3 -->
+
+    </div> <!-- /.row -->
+<footer class="well" id="footer" w3-include-html="../../../bootstrap/inc/footer.html"></footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!--<script>//window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>  -->
+<script src="../../../bootstrap/js/vendor/bootstrap.min.js"></script>
+<script src="../../../bootstrap/js/main.js"></script>    
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
+</div> <!-- /container -->        
+<script>
+$(document).ready(function(){
+
+    $( "#SubmitExampleValidateForm" ).validate({
+
+    });
+    $( "#RadioExampleValidateForm" ).validate({
+
+    });
+    $( "#RadioExampleValidationCheckForm" ).validate({
+
+    });
+    $( "#SelectExampleValidateForm" ).validate({
+
+    });
+    $( "#TextExampleDOMForm" ).validate({
+
+    });
+    $( "#SelectExampleDOMForm" ).validate({
+
+    });
+
+    $("#btnNewPatientRegistration").click(function(){
+        $("#NewPatientRegistration").slideToggle("slow");
+    });
+    
+    $("#btnCalculator").click(function(){
+        $("#Calculator").slideToggle("slow");
+    });
+
+    $("#btnUnitConversion").click(function(){
+        $("#UnitConversion").slideToggle("slow");
+    });
+
+    $("#btnCurrencyValueHistory1").click(function(){
+        $("#CurrencyValueHistory1").slideToggle("slow");
+    });
+
+    $("#btnCurrencyValueHistory2").click(function(){
+        $("#CurrencyValueHistory2").slideToggle("slow");
+    });
+
+    $("#btnmarsroverphotoexplorer1").click(function(){
+        $("#marsroverphotoexplorer1").slideToggle("slow");
+    });
+
+    $("#btnmarsroverphotoexplorer2").click(function(){
+        $("#marsroverphotoexplorer2").slideToggle("slow");
+    });
+}); 
+
+</script>
+</body>
+</html>
