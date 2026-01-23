@@ -5,7 +5,7 @@
 body {
     padding-top: 50px;
     padding-bottom: 20px;
-    background-image: url("/img/background-dots.png");
+    background-image: url("../../img/background-dots.png");
 }
   /*
 header.carousel .fill {
@@ -1384,9 +1384,9 @@ header.carousel .fill {
 /*
 #SP2026ITEC3650Day1,
 #SP2026ITEC3650Day2,
-*/
 #SP2026ITEC3650Day3,
 #SP2026ITEC3650Day4,
+*/
 #SP2026ITEC3650Day5,
 #SP2026ITEC3650Day6,
 #SP2026ITEC3650Day7,
