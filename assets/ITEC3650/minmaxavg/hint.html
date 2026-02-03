@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <title>Hint for Min, Max, Average</title>
+</head>
+<body>
+    <h1>Hint for Min, Max, Average</h1>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script>
+        var myURL = "https://brucebauer.info/assets/ITEC3650/ajaxminmaxavg.php";
+        var myMethod = "GET";
+
+        /* AJAX Min Max Avg requires Operand1, Operator2, Operand 2, and Operator */
+        
+        /* Create the data object and add the values as properties to the object 
+        The names of the properties must EXACTLY match the names required by the AJAX page  */
+        var myData = {};
+        myData.Operand1 = "4";
+        myData.Operand2 = "5";
+        myData.Operand3 = "7";
+        myData.Operator = "Avg";
+
+        
+        /* Make sure document is ready */
+        $(document).ready(function() {
+
+            /* Perform AJAX call to process data */
+            $.ajax({
+              method: myMethod,
+              data: myData,
+              url: myURL
+            })
+
+            /* AJAX complete - display the result */
+            .done(function( msg ) {
+                alert(msg);
+            });
+        });
+</script>
+</html>
