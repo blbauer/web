@@ -1,0 +1,38 @@
+<html>
+<body>
+<h1>Get Hints Using Fetch Example</h1>
+<p>Start typing a name in the input field below:</p>
+<p>First name: <input type="text" id=txtName onkeyup="showHint()"></p>
+<p>Suggestions: <span id="txtHint"></span></p>
+<script>
+"use strict";
+
+/* On each keystroke, get the current value of the input text box */
+async function showHint() {
+    
+    let hintvalue = document.getElementById("txtName").value;
+    
+    /* If the textbox is empty, then the hint is empty */
+    /* if the textbox is not empty - perform the AJAX call to display the result */    
+    if (hintvalue.length == 0) { 
+        document.getElementById("txtHint").innerHTML = "";
+    } else {
+        /* URL for AJAX Call */
+        let myURL = "https://brucebauer.info/assets/ITEC3650/gethint.php";
+
+        /* Append parameters to URL */
+        myURL = myURL + "?Name=" + hintvalue;
+
+        /* Fetch the data */
+        let myHintObject = await fetch(myURL);
+        let myHintText = await myHintObject.text();
+
+        /* Display the result */
+        document.getElementById("txtHint").innerHTML = myHintText;
+    }
+}
+
+/* AJAX call to return the result of the hint */
+</script>
+</body>
+</html>
