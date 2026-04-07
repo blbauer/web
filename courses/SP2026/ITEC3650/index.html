@@ -2240,14 +2240,45 @@ Javascirpt to insert value from a radio button into a database
                 </div>
                 <div class="panel-body">
                     <ul>
-                        <li>Major Filters: List of sites</li>
-                        <li>Site or Site Numbers: Site Numbers separated by commas</li>
-                        <li>Output Format: JSON</li>
-                        <li>Indent: checked</li>
-                        <li>Option filter - Date Range - Return all values from a period from now</li>
-                        <li>Period (All Values): P7D</li>
-                        <li>Sites Serving Parameter Codes: Lookup "Gage height, feet" (00065)</li>
-                        <li>Click Generate URL</li>
+                        <li>Go to: <a href="https://maps.waterdata.usgs.gov/">https://maps.waterdata.usgs.gov/</a> and get the PID's of your client's river points.</li>
+                        <li>Go to: <a href="https://maps.waterdata.usgs.gov/">https://maps.waterdata.usgs.gov/</a>. Select Continuous Values API, then OpenAPI Documentation, then</li>
+                        <li>Review GET /collections/latest-continous/items</li>
+                        <li>Click on the Try It Out button
+                            <ul>
+                                <li>f parameter - json</li>
+                                <li>lang - en-US</li>
+                                <li>bbox - blank</li>
+                                <li>limit - 10000</li>
+                                <li>crs - blank</li>
+                                <li>bbox-crs - leave blank</li>
+                                <li>properites - select the following
+                                    <ul>
+                                        <li>monitoring_location_id</li>
+                                        <li>parameter_code</li>
+                                        <li>statistic_id</li>
+                                        <li>time</li>
+                                        <li>value</li>
+                                        <li>unit_of_measure</li>
+                                    </ul>
+                                </li>
+                                <li>skip-Geometry - true</li>
+                                <li>sort by - blank</li>
+                                <li>offset - 0</li>
+                                <li>date time - blank</li>
+                                <li>time_series_id - blank</li>
+                                <li>monitoring_location_id - "USGS-" followed by your PID's, separated by a comma</li>
+                                <li>parameter_code - 00065 - See codes for Gage Height</li>
+                                <li>statistic_id - blank</li>
+                                <li>time - P7D - last 7 days</li>
+                                <li>value - leave blank</li>
+                                <li>unit_of_measure - blank</li>
+                                <li>approval_status - blank</li>
+                                <li>qualifier - blank</li>
+                                <li>last_modified - blank</li>
+                                <li>filter - blank</li>
+                            </ul>
+                        </li>
+                        <li>Click Execute</li>
                     </ul>
                     <div class="well">
                         <strong>Assignment - due next class period</strong>
