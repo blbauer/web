@@ -61,6 +61,24 @@ for (var i = 0; i < fLen; i++) {
     }
 }
 
+/*var ctx = document.getElementById("chartjs-0");
+
+var myChart = new Chart(ctx, {
+    "type":"line",
+    "data": {
+        "labels": dates,
+        "datasets":[{
+            "data": values,
+            fill: false
+        }]
+    },
+    "options":{ 
+        responsive: false,
+        maintainAspectRatio: true,
+    }
+});
+*/
+
 var ctx = document.getElementById("chartjs-0");
 var myChart = new Chart(ctx, {
     "type":"line",
@@ -100,7 +118,6 @@ var myChart = new Chart(ctx, {
         }
     }
 );
-
 /* Information about the PID */
 var sitename = "Ponca"
 var sitecode = "USGS-07055660"
