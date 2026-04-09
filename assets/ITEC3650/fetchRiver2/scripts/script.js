@@ -39,30 +39,27 @@ getData();
 
 async function getData() {
 var myURL = "https://api.waterdata.usgs.gov/ogcapi/v0/collections/continuous/items?f=json&lang=en-US&limit=10000&properties=monitoring_location_id,parameter_code,statistic_id,time,value,unit_of_measure&offset=0&monitoring_location_id=USGS-07055646%2C%20USGS-07055660%2C%20USGS-07055680%2C%20USGS-07055780&parameter_code=00065&statistic_id=00011&time=P7D";
-
 var msgObject = await fetch(myURL);
-/* Check the status */
 var msgJSONText = await msgObject.text();
 var msg = JSON.parse(msgJSONText);
 
+/* Information about the PID */
+var sitename = "Boxley"
+var sitecode = "USGS-07055646"
+var siteDescription = "Boxley Creek"
 
-/* Your code to process the result goes here */
+/* Holds the dates and values to be graphed */
 var dates = [];
 var values = [];
 
 /* fLen contains the length of the array (number of values) */
 fLen = msg.features.length
-var j = 0;
-for (i = 0; i < fLen; i++) {
-    if (msg.features[i].properties.monitoring_location_id == "USGS-07055646") {
-        values[j] = msg.features[i].properties.value;
-        dates[j] = msg.features[i].properties.time;
-        j= j + 1;
+for (var i = 0; i < fLen; i++) {
+    if (msg.features[i].properties.monitoring_location_id == sitecode) {
+        values.push(msg.features[i].properties.value);
+        dates.push(msg.features[i].properties.time);
     }
 }
-var sitename = "Boxley"
-var sitecode = "USGS-07055646"
-var siteDescription = "Boxley Creek"
 
 var ctx = document.getElementById("chartjs-0");
 var myChart = new Chart(ctx, {
@@ -104,24 +101,23 @@ var myChart = new Chart(ctx, {
     }
 );
 
+/* Information about the PID */
+var sitename = "Ponca"
+var sitecode = "USGS-07055660"
+var siteDescription = "Ponca Bridge"
 
-/* Your code to process the result goes here */
+/* Holds the dates and values to be graphed */
 var dates = [];
 var values = [];
 
 /* fLen contains the length of the array (number of values) */
 fLen = msg.features.length
-var j = 0;
-for (i = 0; i < fLen; i++) {
-    if (msg.features[i].properties.monitoring_location_id == "USGS-07055660") {
-        values[j] = msg.features[i].properties.value;
-        dates[j] = msg.features[i].properties.time;
-        j= j + 1;
+for (var i = 0; i < fLen; i++) {
+    if (msg.features[i].properties.monitoring_location_id == sitecode) {
+        values.push(msg.features[i].properties.value);
+        dates.push(msg.features[i].properties.time);
     }
 }
-var sitename = "Ponca"
-var sitecode = "USGS-07055660"
-var siteDescription = "Ponca Bridge"
 
 var ctx = document.getElementById("chartjs-1");
 var myChart = new Chart(ctx, {
@@ -163,24 +159,23 @@ var myChart = new Chart(ctx, {
     }
 );
 
+/* Information about the PID */
+var sitename = "Pruit"
+var sitecode = "USGS-07055680"
+var siteDescription = "Pruitt Bridge"
 
-/* Your code to process the result goes here */
+/* Holds the dates and values to be graphed */
 var dates = [];
 var values = [];
 
 /* fLen contains the length of the array (number of values) */
 fLen = msg.features.length
-var j = 0;
-for (i = 0; i < fLen; i++) {
-    if (msg.features[i].properties.monitoring_location_id == "USGS-07055680") {
-        values[j] = msg.features[i].properties.value;
-        dates[j] = msg.features[i].properties.time;
-        j= j + 1;
+for (var i = 0; i < fLen; i++) {
+    if (msg.features[i].properties.monitoring_location_id == sitecode) {
+        values.push(msg.features[i].properties.value);
+        dates.push(msg.features[i].properties.time);
     }
 }
-var sitename = "Pruit"
-var sitecode = "USGS-07055680"
-var siteDescription = "Pruitt Bridge"
 
 var ctx = document.getElementById("chartjs-2");
 var myChart = new Chart(ctx, {

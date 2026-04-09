@@ -2332,36 +2332,26 @@ In your HTML document, add the following for the chart:
 In your javascript after the msg has been returned from the AJAX call, add the following:
 
 /* Site 1 */
+/* Information about the PID */
+var sitename = "Ponca"
+var sitecode = "USGS-07055660"
+var siteDescription = "Ponca Bridge"
+
+/* Holds the dates and values to be graphed */
 var dates = [];
 var values = [];
-/* fLen contains the length of the array (number of values) */
-fLen = msg.value.timeSeries[0].values[0].value.length
-for (i = 0; i &lt; fLen; i++) {
-    values[i] = msg.value.timeSeries[0].values[0].value[i].value
-	dates[i] = msg.value.timeSeries[0].values[0].value[i].dateTime
-}
-var sitename = msg.value.timeSeries[0].sourceInfo.siteName
-var sitecode = msg.value.timeSeries[0].sourceInfo.siteCode[0].value
-var siteDescription = msg.value.timeSeries[0].variable.variableDescription
 
+/* fLen contains the length of the array (number of values) */
+fLen = msg.features.length
+for (var i = 0; i < fLen; i++) {
+    if (msg.features[i].properties.monitoring_location_id == sitecode) {
+        values.push(msg.features[i].properties.value);
+        dates.push(msg.features[i].properties.time);
+    }
+}
 /* Put your code here to display a graph of values and dates for Site 1*/
 
-/* Site 2 */
-var dates = [];
-var values = [];
-/* fLen contains the length of the array (number of values) */
-fLen = msg.value.timeSeries[1].values[0].value.length
-for (i = 0; i &lt; fLen; i++) {
-    values[i] = msg.value.timeSeries[1].values[0].value[i].value
-	dates[i] = msg.value.timeSeries[1].values[0].value[i].dateTime
-}
-var sitename = msg.value.timeSeries[1].sourceInfo.siteName
-var sitecode = msg.value.timeSeries[1].sourceInfo.siteCode[0].value
-var siteDescription = msg.value.timeSeries[1].variable.variableDescription
-
-/* Put your code here to display a graph of values and dates */
-
-/* Continue for Sites 3 and 4 */
+/* Continue for Sites 2 and 3 */
 
 </pre>
                     <div class="well">
